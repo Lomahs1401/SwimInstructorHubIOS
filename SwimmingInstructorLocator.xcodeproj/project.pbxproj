@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E43F10142B9E4CE000602228 /* OnBoardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F10132B9E4CE000602228 /* OnBoardingContentViewController.swift */; };
+		E43F10162B9EE5A700602228 /* NotificationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F10152B9EE5A700602228 /* NotificationExt.swift */; };
+		E43F109C2B9F650900602228 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F109B2B9F650900602228 /* HomeViewController.swift */; };
+		E43F109E2B9F651800602228 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F109D2B9F651800602228 /* CalendarViewController.swift */; };
+		E43F10A02B9F652100602228 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F109F2B9F652100602228 /* NotificationViewController.swift */; };
 		E4F5D9522B9DB464006C5BF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D9512B9DB464006C5BF2 /* AppDelegate.swift */; };
 		E4F5D9542B9DB464006C5BF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D9532B9DB464006C5BF2 /* SceneDelegate.swift */; };
 		E4F5D9562B9DB464006C5BF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D9552B9DB464006C5BF2 /* ViewController.swift */; };
@@ -17,6 +22,7 @@
 		E4F5D96C2B9DB467006C5BF2 /* SwimmingInstructorLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D96B2B9DB467006C5BF2 /* SwimmingInstructorLocatorTests.swift */; };
 		E4F5D9762B9DB467006C5BF2 /* SwimmingInstructorLocatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D9752B9DB467006C5BF2 /* SwimmingInstructorLocatorUITests.swift */; };
 		E4F5D9782B9DB467006C5BF2 /* SwimmingInstructorLocatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D9772B9DB467006C5BF2 /* SwimmingInstructorLocatorUITestsLaunchTests.swift */; };
+		E4F5D9902B9DBEDE006C5BF2 /* OnBoardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D98E2B9DBEDE006C5BF2 /* OnBoardingPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E43F10132B9E4CE000602228 /* OnBoardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContentViewController.swift; sourceTree = "<group>"; };
+		E43F10152B9EE5A700602228 /* NotificationExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExt.swift; sourceTree = "<group>"; };
+		E43F109B2B9F650900602228 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E43F109D2B9F651800602228 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		E43F109F2B9F652100602228 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		E4F5D94E2B9DB464006C5BF2 /* SwimmingInstructorLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwimmingInstructorLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F5D9512B9DB464006C5BF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4F5D9532B9DB464006C5BF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +62,7 @@
 		E4F5D9712B9DB467006C5BF2 /* SwimmingInstructorLocatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwimmingInstructorLocatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F5D9752B9DB467006C5BF2 /* SwimmingInstructorLocatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimmingInstructorLocatorUITests.swift; sourceTree = "<group>"; };
 		E4F5D9772B9DB467006C5BF2 /* SwimmingInstructorLocatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimmingInstructorLocatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4F5D98E2B9DBEDE006C5BF2 /* OnBoardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4687BC22B9F6B1D008E7A18 /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				E4F5D98E2B9DBEDE006C5BF2 /* OnBoardingPageViewController.swift */,
+				E43F10132B9E4CE000602228 /* OnBoardingContentViewController.swift */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
 		E4F5D9452B9DB464006C5BF2 = {
 			isa = PBXGroup;
 			children = (
@@ -101,12 +122,17 @@
 		E4F5D9502B9DB464006C5BF2 /* SwimmingInstructorLocator */ = {
 			isa = PBXGroup;
 			children = (
+				E4F5D98D2B9DB561006C5BF2 /* Model */,
+				E4F5D98A2B9DB54D006C5BF2 /* View */,
+				E4F5D9892B9DB54A006C5BF2 /* Controller */,
+				E4F5D9882B9DB53D006C5BF2 /* Constants */,
+				E4F5D9872B9DB531006C5BF2 /* Util */,
+				E4F5D9862B9DB52B006C5BF2 /* Secrets */,
+				E4F5D9842B9DB471006C5BF2 /* Extensions */,
 				E4F5D9512B9DB464006C5BF2 /* AppDelegate.swift */,
 				E4F5D9532B9DB464006C5BF2 /* SceneDelegate.swift */,
 				E4F5D9552B9DB464006C5BF2 /* ViewController.swift */,
-				E4F5D9572B9DB464006C5BF2 /* Main.storyboard */,
 				E4F5D95D2B9DB466006C5BF2 /* Assets.xcassets */,
-				E4F5D95F2B9DB466006C5BF2 /* LaunchScreen.storyboard */,
 				E4F5D9622B9DB466006C5BF2 /* Info.plist */,
 				E4F5D95A2B9DB464006C5BF2 /* SwimmingInstructorLocator.xcdatamodeld */,
 			);
@@ -128,6 +154,78 @@
 				E4F5D9772B9DB467006C5BF2 /* SwimmingInstructorLocatorUITestsLaunchTests.swift */,
 			);
 			path = SwimmingInstructorLocatorUITests;
+			sourceTree = "<group>";
+		};
+		E4F5D9842B9DB471006C5BF2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E43F10152B9EE5A700602228 /* NotificationExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E4F5D9862B9DB52B006C5BF2 /* Secrets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Secrets;
+			sourceTree = "<group>";
+		};
+		E4F5D9872B9DB531006C5BF2 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E4F5D9882B9DB53D006C5BF2 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		E4F5D9892B9DB54A006C5BF2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E4687BC22B9F6B1D008E7A18 /* OnBoarding */,
+				E43F109B2B9F650900602228 /* HomeViewController.swift */,
+				E43F109D2B9F651800602228 /* CalendarViewController.swift */,
+				E43F109F2B9F652100602228 /* NotificationViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E4F5D98A2B9DB54D006C5BF2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4F5D98C2B9DB558006C5BF2 /* Storyboard */,
+				E4F5D98B2B9DB555006C5BF2 /* Xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E4F5D98B2B9DB555006C5BF2 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Xib;
+			sourceTree = "<group>";
+		};
+		E4F5D98C2B9DB558006C5BF2 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				E4F5D9572B9DB464006C5BF2 /* Main.storyboard */,
+				E4F5D95F2B9DB466006C5BF2 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		E4F5D98D2B9DB561006C5BF2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,8 +359,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E43F10A02B9F652100602228 /* NotificationViewController.swift in Sources */,
 				E4F5D9562B9DB464006C5BF2 /* ViewController.swift in Sources */,
+				E43F10162B9EE5A700602228 /* NotificationExt.swift in Sources */,
+				E43F10142B9E4CE000602228 /* OnBoardingContentViewController.swift in Sources */,
+				E43F109C2B9F650900602228 /* HomeViewController.swift in Sources */,
 				E4F5D9522B9DB464006C5BF2 /* AppDelegate.swift in Sources */,
+				E4F5D9902B9DBEDE006C5BF2 /* OnBoardingPageViewController.swift in Sources */,
+				E43F109E2B9F651800602228 /* CalendarViewController.swift in Sources */,
 				E4F5D95C2B9DB464006C5BF2 /* SwimmingInstructorLocator.xcdatamodeld in Sources */,
 				E4F5D9542B9DB464006C5BF2 /* SceneDelegate.swift in Sources */,
 			);
