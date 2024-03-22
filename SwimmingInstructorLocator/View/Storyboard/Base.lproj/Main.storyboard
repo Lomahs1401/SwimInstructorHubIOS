@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DkL-UD-jH4">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -37,6 +38,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6o5-q4-lX1">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -47,7 +49,7 @@
             </objects>
             <point key="canvasLocation" x="944" y="-797"/>
         </scene>
-        <!--Home View Controller-->
+        <!--HOME-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="HomeViewController" customModule="SwimmingInstructorLocator" customModuleProvider="target" sceneMemberID="viewController">
@@ -69,11 +71,17 @@
                             <constraint firstItem="LkO-A9-3rd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="m0W-4I-yH7"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Yon-2d-ePE"/>
+                    <navigationItem key="navigationItem" title="HOME" id="Yon-2d-ePE">
+                        <barButtonItem key="leftBarButtonItem" image="list.dash" catalog="system" style="done" id="Kfm-Gx-iIW">
+                            <connections>
+                                <segue destination="j7j-V2-IMq" kind="show" id="46L-Co-oQE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1789" y="-797"/>
+            <point key="canvasLocation" x="1788.5496183206105" y="-797.18309859154931"/>
         </scene>
         <!--Calendar-->
         <scene sceneID="Wg2-nF-4Hr">
@@ -83,6 +91,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wl4-GZ-eS1">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
                     <connections>
                         <segue destination="6KE-Lw-5Z4" kind="relationship" relationship="rootViewController" id="Vva-Ov-tGk"/>
@@ -92,7 +101,7 @@
             </objects>
             <point key="canvasLocation" x="943" y="-106"/>
         </scene>
-        <!--Calendar View Controller-->
+        <!--CALENDAR-->
         <scene sceneID="3DR-Me-6jS">
             <objects>
                 <viewController id="6KE-Lw-5Z4" customClass="CalendarViewController" customModule="SwimmingInstructorLocator" customModuleProvider="target" sceneMemberID="viewController">
@@ -114,11 +123,125 @@
                             <constraint firstItem="MSl-Se-g7m" firstAttribute="centerX" secondItem="js8-Ba-TMb" secondAttribute="centerX" id="OZq-xd-lKI"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="2gN-pX-T76"/>
+                    <navigationItem key="navigationItem" title="CALENDAR" id="2gN-pX-T76">
+                        <barButtonItem key="leftBarButtonItem" image="list.dash" catalog="system" id="wDg-n2-qP8">
+                            <connections>
+                                <segue destination="j7j-V2-IMq" kind="show" id="T6H-ah-bZT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="faK-V9-FoA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1789" y="-106"/>
+        </scene>
+        <!--Side Menu Navigation Controller-->
+        <scene sceneID="e2f-uu-4t6">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="j7j-V2-IMq" customClass="SideMenuNavigationController" customModule="SideMenu" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="2D7-IG-9wJ"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5ms-cG-sf4">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dTR-9h-y1y">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="leftSide" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="menuWidth">
+                            <real key="value" value="280"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <segue destination="Od0-fN-v3t" kind="relationship" relationship="rootViewController" id="BZ9-el-3qK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U6u-lP-8Kb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2763" y="-106"/>
+        </scene>
+        <!--Side Menu View Controller-->
+        <scene sceneID="7R9-mA-sdi">
+            <objects>
+                <viewController id="Od0-fN-v3t" customClass="SideMenuViewController" customModule="SwimmingInstructorLocator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NDm-1G-Wds">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UoC-j9-aus">
+                                <rect key="frame" x="0.0" y="0.0" width="280" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_login" translatesAutoresizingMaskIntoConstraints="NO" id="dAc-rW-fBv">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="3Lk-nk-xeg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dU7-0N-9g2">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="200"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="yjc-H8-Dnc">
+                                        <rect key="frame" x="0.0" y="200" width="280" height="652"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="sideMenuCell" id="Rdx-j1-ykn">
+                                                <rect key="frame" x="0.0" y="50" width="280" height="47.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rdx-j1-ykn" id="L4I-f3-6nj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="280" height="47.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                        <connections>
+                                            <outlet property="dataSource" destination="Od0-fN-v3t" id="93w-MG-NJy"/>
+                                            <outlet property="delegate" destination="Od0-fN-v3t" id="CJ6-wO-3kY"/>
+                                        </connections>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="まだログインしていません" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NiH-ZR-0Bl">
+                                        <rect key="frame" x="20" y="158.33333333333334" width="240" height="21.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" systemColor="systemGray6Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="dAc-rW-fBv" firstAttribute="leading" secondItem="UoC-j9-aus" secondAttribute="leading" id="1GI-YQ-5Fl"/>
+                                    <constraint firstItem="dAc-rW-fBv" firstAttribute="top" secondItem="UoC-j9-aus" secondAttribute="top" id="4XI-KB-AkA"/>
+                                    <constraint firstItem="dU7-0N-9g2" firstAttribute="top" secondItem="UoC-j9-aus" secondAttribute="top" id="9Jr-Aq-C9D"/>
+                                    <constraint firstAttribute="trailing" secondItem="NiH-ZR-0Bl" secondAttribute="trailing" constant="20" id="Bps-PJ-opq"/>
+                                    <constraint firstItem="yjc-H8-Dnc" firstAttribute="top" secondItem="NiH-ZR-0Bl" secondAttribute="bottom" constant="20" id="HgQ-h0-dnV"/>
+                                    <constraint firstAttribute="width" constant="280" id="KEp-bG-sik"/>
+                                    <constraint firstAttribute="bottom" secondItem="yjc-H8-Dnc" secondAttribute="bottom" id="Pvv-TY-jMt"/>
+                                    <constraint firstAttribute="trailing" secondItem="yjc-H8-Dnc" secondAttribute="trailing" id="QPa-I5-VkN"/>
+                                    <constraint firstItem="NiH-ZR-0Bl" firstAttribute="leading" secondItem="UoC-j9-aus" secondAttribute="leading" constant="20" id="V2l-7T-2Gu"/>
+                                    <constraint firstItem="dU7-0N-9g2" firstAttribute="leading" secondItem="UoC-j9-aus" secondAttribute="leading" id="WVj-kK-Vz6"/>
+                                    <constraint firstItem="yjc-H8-Dnc" firstAttribute="top" secondItem="dAc-rW-fBv" secondAttribute="bottom" id="Y7x-4s-7nl"/>
+                                    <constraint firstAttribute="trailing" secondItem="dU7-0N-9g2" secondAttribute="trailing" id="fTY-vk-EgQ"/>
+                                    <constraint firstItem="yjc-H8-Dnc" firstAttribute="top" secondItem="dU7-0N-9g2" secondAttribute="bottom" id="iFm-9e-12X"/>
+                                    <constraint firstAttribute="trailing" secondItem="dAc-rW-fBv" secondAttribute="trailing" id="oDU-tp-qZu"/>
+                                    <constraint firstItem="yjc-H8-Dnc" firstAttribute="leading" secondItem="UoC-j9-aus" secondAttribute="leading" id="ztP-Zg-P87"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="f86-dk-zRW"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UoC-j9-aus" secondAttribute="bottom" id="55o-BV-G3d"/>
+                            <constraint firstItem="UoC-j9-aus" firstAttribute="top" secondItem="NDm-1G-Wds" secondAttribute="top" id="tEw-k7-Gmd"/>
+                            <constraint firstItem="UoC-j9-aus" firstAttribute="leading" secondItem="f86-dk-zRW" secondAttribute="leading" id="uk8-gp-eKE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EMO-km-JqJ"/>
+                    <connections>
+                        <outlet property="tableView" destination="yjc-H8-Dnc" id="ykx-Ih-QJf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ae-cs-xCY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3570" y="-106"/>
         </scene>
         <!--Notification-->
         <scene sceneID="Q9E-uz-AnL">
@@ -128,6 +251,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="tZ4-TS-QVv">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance"/>
                     </navigationBar>
                     <connections>
                         <segue destination="KuG-SI-BDI" kind="relationship" relationship="rootViewController" id="wIK-P9-hMI"/>
@@ -137,7 +261,7 @@
             </objects>
             <point key="canvasLocation" x="943" y="625"/>
         </scene>
-        <!--Notification View Controller-->
+        <!--NOTIFICATION-->
         <scene sceneID="YJL-YX-Axh">
             <objects>
                 <viewController id="KuG-SI-BDI" customClass="NotificationViewController" customModule="SwimmingInstructorLocator" customModuleProvider="target" sceneMemberID="viewController">
@@ -159,25 +283,36 @@
                             <constraint firstItem="IfT-hB-bfe" firstAttribute="centerX" secondItem="7hy-0H-9PV" secondAttribute="centerX" id="x4x-6e-gSS"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="iUL-vf-eE1"/>
+                    <navigationItem key="navigationItem" title="NOTIFICATION" id="iUL-vf-eE1">
+                        <barButtonItem key="leftBarButtonItem" image="list.dash" catalog="system" id="1zG-mL-pA0">
+                            <connections>
+                                <segue destination="j7j-V2-IMq" kind="show" id="NcI-1t-T8a"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ube-O5-p3h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1789" y="625"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="NcI-1t-T8a"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="background_login" width="735" height="1104"/>
         <image name="bell.circle" catalog="system" width="128" height="123"/>
         <image name="bell.circle.fill" catalog="system" width="128" height="123"/>
         <image name="calendar.circle" catalog="system" width="128" height="123"/>
         <image name="calendar.circle.fill" catalog="system" width="128" height="123"/>
         <image name="house.circle" catalog="system" width="128" height="123"/>
         <image name="house.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

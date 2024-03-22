@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2BE3AD0832BF780D54561117 /* Pods_SwimmingInstructorLocatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9BE97DCFD85208CE28644B /* Pods_SwimmingInstructorLocatorTests.framework */; };
+		774E1CCEE7C8243BC2191344 /* Pods_SwimmingInstructorLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079879E66BB7E0D71FA7F437 /* Pods_SwimmingInstructorLocator.framework */; };
+		92A5A6D7FB02F4B5A2091B5C /* Pods_SwimmingInstructorLocator_SwimmingInstructorLocatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD45739D2F8C5EF016FBC6F /* Pods_SwimmingInstructorLocator_SwimmingInstructorLocatorUITests.framework */; };
 		E43F10142B9E4CE000602228 /* OnBoardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F10132B9E4CE000602228 /* OnBoardingContentViewController.swift */; };
 		E43F10162B9EE5A700602228 /* NotificationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F10152B9EE5A700602228 /* NotificationExt.swift */; };
 		E43F109C2B9F650900602228 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F109B2B9F650900602228 /* HomeViewController.swift */; };
 		E43F109E2B9F651800602228 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F109D2B9F651800602228 /* CalendarViewController.swift */; };
 		E43F10A02B9F652100602228 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F109F2B9F652100602228 /* NotificationViewController.swift */; };
+		E460377B2BACFE7900F6BE91 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E460377A2BACFE7900F6BE91 /* SideMenuViewController.swift */; };
+		E4687BC52B9FD0EB008E7A18 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BC42B9FD0EB008E7A18 /* Appointment.swift */; };
+		E4687BC72B9FD0F4008E7A18 /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BC62B9FD0F4008E7A18 /* Center.swift */; };
+		E4687BC92B9FD103008E7A18 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BC82B9FD103008E7A18 /* User.swift */; };
+		E4687BCB2B9FD111008E7A18 /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BCA2B9FD111008E7A18 /* Instructor.swift */; };
+		E4687BCD2B9FD118008E7A18 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BCC2B9FD118008E7A18 /* Course.swift */; };
+		E4687BCF2BA07B06008E7A18 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BCE2BA07B06008E7A18 /* APICaller.swift */; };
+		E47418452BA60E0000EF21AA /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47418442BA60E0000EF21AA /* SideMenuTableViewController.swift */; };
 		E4F5D9522B9DB464006C5BF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D9512B9DB464006C5BF2 /* AppDelegate.swift */; };
 		E4F5D9542B9DB464006C5BF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D9532B9DB464006C5BF2 /* SceneDelegate.swift */; };
 		E4F5D9562B9DB464006C5BF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D9552B9DB464006C5BF2 /* ViewController.swift */; };
@@ -43,11 +54,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		079879E66BB7E0D71FA7F437 /* Pods_SwimmingInstructorLocator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwimmingInstructorLocator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1470653404370BD3C7E890A7 /* Pods-SwimmingInstructorLocator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwimmingInstructorLocator.debug.xcconfig"; path = "Target Support Files/Pods-SwimmingInstructorLocator/Pods-SwimmingInstructorLocator.debug.xcconfig"; sourceTree = "<group>"; };
+		3E15D51B483511D821C588C5 /* Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests.release.xcconfig"; path = "Target Support Files/Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests/Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4BD45739D2F8C5EF016FBC6F /* Pods_SwimmingInstructorLocator_SwimmingInstructorLocatorUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwimmingInstructorLocator_SwimmingInstructorLocatorUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50089E938E1C635E540A9108 /* Pods-SwimmingInstructorLocatorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwimmingInstructorLocatorTests.release.xcconfig"; path = "Target Support Files/Pods-SwimmingInstructorLocatorTests/Pods-SwimmingInstructorLocatorTests.release.xcconfig"; sourceTree = "<group>"; };
+		60AC22DFC3612F2E115DCB25 /* Pods-SwimmingInstructorLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwimmingInstructorLocator.release.xcconfig"; path = "Target Support Files/Pods-SwimmingInstructorLocator/Pods-SwimmingInstructorLocator.release.xcconfig"; sourceTree = "<group>"; };
+		7256F1AF2F86600E61E153E0 /* Pods-SwimmingInstructorLocatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwimmingInstructorLocatorTests.debug.xcconfig"; path = "Target Support Files/Pods-SwimmingInstructorLocatorTests/Pods-SwimmingInstructorLocatorTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A9BE97DCFD85208CE28644B /* Pods_SwimmingInstructorLocatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwimmingInstructorLocatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43F10132B9E4CE000602228 /* OnBoardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContentViewController.swift; sourceTree = "<group>"; };
 		E43F10152B9EE5A700602228 /* NotificationExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExt.swift; sourceTree = "<group>"; };
 		E43F109B2B9F650900602228 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E43F109D2B9F651800602228 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		E43F109F2B9F652100602228 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		E460377A2BACFE7900F6BE91 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		E4687BC42B9FD0EB008E7A18 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		E4687BC62B9FD0F4008E7A18 /* Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Center.swift; sourceTree = "<group>"; };
+		E4687BC82B9FD103008E7A18 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E4687BCA2B9FD111008E7A18 /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
+		E4687BCC2B9FD118008E7A18 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		E4687BCE2BA07B06008E7A18 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		E47418442BA60E0000EF21AA /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		E4F5D94E2B9DB464006C5BF2 /* SwimmingInstructorLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwimmingInstructorLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F5D9512B9DB464006C5BF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4F5D9532B9DB464006C5BF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +90,7 @@
 		E4F5D9752B9DB467006C5BF2 /* SwimmingInstructorLocatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimmingInstructorLocatorUITests.swift; sourceTree = "<group>"; };
 		E4F5D9772B9DB467006C5BF2 /* SwimmingInstructorLocatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimmingInstructorLocatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E4F5D98E2B9DBEDE006C5BF2 /* OnBoardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageViewController.swift; sourceTree = "<group>"; };
+		F0259EB9540C7E8FFF08C746 /* Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests/Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774E1CCEE7C8243BC2191344 /* Pods_SwimmingInstructorLocator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE3AD0832BF780D54561117 /* Pods_SwimmingInstructorLocatorTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92A5A6D7FB02F4B5A2091B5C /* Pods_SwimmingInstructorLocator_SwimmingInstructorLocatorUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +137,8 @@
 				E4F5D96A2B9DB467006C5BF2 /* SwimmingInstructorLocatorTests */,
 				E4F5D9742B9DB467006C5BF2 /* SwimmingInstructorLocatorUITests */,
 				E4F5D94F2B9DB464006C5BF2 /* Products */,
+				E8D4C963516B2B343B804532 /* Pods */,
+				EFB415E922ECDCED15AB2EEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +207,7 @@
 		E4F5D9872B9DB531006C5BF2 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				E4687BCE2BA07B06008E7A18 /* APICaller.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -192,6 +226,8 @@
 				E43F109B2B9F650900602228 /* HomeViewController.swift */,
 				E43F109D2B9F651800602228 /* CalendarViewController.swift */,
 				E43F109F2B9F652100602228 /* NotificationViewController.swift */,
+				E47418442BA60E0000EF21AA /* SideMenuTableViewController.swift */,
+				E460377A2BACFE7900F6BE91 /* SideMenuViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,8 +260,36 @@
 		E4F5D98D2B9DB561006C5BF2 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E4687BC42B9FD0EB008E7A18 /* Appointment.swift */,
+				E4687BC62B9FD0F4008E7A18 /* Center.swift */,
+				E4687BC82B9FD103008E7A18 /* User.swift */,
+				E4687BCA2B9FD111008E7A18 /* Instructor.swift */,
+				E4687BCC2B9FD118008E7A18 /* Course.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E8D4C963516B2B343B804532 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1470653404370BD3C7E890A7 /* Pods-SwimmingInstructorLocator.debug.xcconfig */,
+				60AC22DFC3612F2E115DCB25 /* Pods-SwimmingInstructorLocator.release.xcconfig */,
+				F0259EB9540C7E8FFF08C746 /* Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests.debug.xcconfig */,
+				3E15D51B483511D821C588C5 /* Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests.release.xcconfig */,
+				7256F1AF2F86600E61E153E0 /* Pods-SwimmingInstructorLocatorTests.debug.xcconfig */,
+				50089E938E1C635E540A9108 /* Pods-SwimmingInstructorLocatorTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EFB415E922ECDCED15AB2EEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				079879E66BB7E0D71FA7F437 /* Pods_SwimmingInstructorLocator.framework */,
+				4BD45739D2F8C5EF016FBC6F /* Pods_SwimmingInstructorLocator_SwimmingInstructorLocatorUITests.framework */,
+				8A9BE97DCFD85208CE28644B /* Pods_SwimmingInstructorLocatorTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +299,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4F5D97B2B9DB467006C5BF2 /* Build configuration list for PBXNativeTarget "SwimmingInstructorLocator" */;
 			buildPhases = (
+				9D5AA779522D6AECBADB02FB /* [CP] Check Pods Manifest.lock */,
 				E4F5D94A2B9DB464006C5BF2 /* Sources */,
 				E4F5D94B2B9DB464006C5BF2 /* Frameworks */,
 				E4F5D94C2B9DB464006C5BF2 /* Resources */,
+				F5D83E034D4F956DD6490040 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +318,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4F5D97E2B9DB467006C5BF2 /* Build configuration list for PBXNativeTarget "SwimmingInstructorLocatorTests" */;
 			buildPhases = (
+				2182E7A7AC4BCA2E0C3F5C5B /* [CP] Check Pods Manifest.lock */,
 				E4F5D9632B9DB467006C5BF2 /* Sources */,
 				E4F5D9642B9DB467006C5BF2 /* Frameworks */,
 				E4F5D9652B9DB467006C5BF2 /* Resources */,
@@ -270,9 +337,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E4F5D9812B9DB467006C5BF2 /* Build configuration list for PBXNativeTarget "SwimmingInstructorLocatorUITests" */;
 			buildPhases = (
+				6B6CE1596542D1745C656752 /* [CP] Check Pods Manifest.lock */,
 				E4F5D96D2B9DB467006C5BF2 /* Sources */,
 				E4F5D96E2B9DB467006C5BF2 /* Frameworks */,
 				E4F5D96F2B9DB467006C5BF2 /* Resources */,
+				7127CAEB71403EF9DD18BF10 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -354,20 +423,131 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2182E7A7AC4BCA2E0C3F5C5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwimmingInstructorLocatorTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6B6CE1596542D1745C656752 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7127CAEB71403EF9DD18BF10 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests/Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests/Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests/Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D5AA779522D6AECBADB02FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwimmingInstructorLocator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5D83E034D4F956DD6490040 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwimmingInstructorLocator/Pods-SwimmingInstructorLocator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SwimmingInstructorLocator/Pods-SwimmingInstructorLocator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwimmingInstructorLocator/Pods-SwimmingInstructorLocator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E4F5D94A2B9DB464006C5BF2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4687BC92B9FD103008E7A18 /* User.swift in Sources */,
 				E43F10A02B9F652100602228 /* NotificationViewController.swift in Sources */,
 				E4F5D9562B9DB464006C5BF2 /* ViewController.swift in Sources */,
+				E4687BC52B9FD0EB008E7A18 /* Appointment.swift in Sources */,
+				E47418452BA60E0000EF21AA /* SideMenuTableViewController.swift in Sources */,
 				E43F10162B9EE5A700602228 /* NotificationExt.swift in Sources */,
+				E4687BC72B9FD0F4008E7A18 /* Center.swift in Sources */,
+				E4687BCB2B9FD111008E7A18 /* Instructor.swift in Sources */,
+				E4687BCF2BA07B06008E7A18 /* APICaller.swift in Sources */,
 				E43F10142B9E4CE000602228 /* OnBoardingContentViewController.swift in Sources */,
 				E43F109C2B9F650900602228 /* HomeViewController.swift in Sources */,
 				E4F5D9522B9DB464006C5BF2 /* AppDelegate.swift in Sources */,
 				E4F5D9902B9DBEDE006C5BF2 /* OnBoardingPageViewController.swift in Sources */,
 				E43F109E2B9F651800602228 /* CalendarViewController.swift in Sources */,
+				E4687BCD2B9FD118008E7A18 /* Course.swift in Sources */,
 				E4F5D95C2B9DB464006C5BF2 /* SwimmingInstructorLocator.xcdatamodeld in Sources */,
+				E460377B2BACFE7900F6BE91 /* SideMenuViewController.swift in Sources */,
 				E4F5D9542B9DB464006C5BF2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,7 +641,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -524,7 +704,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -545,6 +725,7 @@
 		};
 		E4F5D97C2B9DB467006C5BF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1470653404370BD3C7E890A7 /* Pods-SwimmingInstructorLocator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -558,6 +739,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -573,6 +755,7 @@
 		};
 		E4F5D97D2B9DB467006C5BF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60AC22DFC3612F2E115DCB25 /* Pods-SwimmingInstructorLocator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -586,6 +769,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -601,6 +785,7 @@
 		};
 		E4F5D97F2B9DB467006C5BF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7256F1AF2F86600E61E153E0 /* Pods-SwimmingInstructorLocatorTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -621,6 +806,7 @@
 		};
 		E4F5D9802B9DB467006C5BF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50089E938E1C635E540A9108 /* Pods-SwimmingInstructorLocatorTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -641,6 +827,7 @@
 		};
 		E4F5D9822B9DB467006C5BF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0259EB9540C7E8FFF08C746 /* Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -659,6 +846,7 @@
 		};
 		E4F5D9832B9DB467006C5BF2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E15D51B483511D821C588C5 /* Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
