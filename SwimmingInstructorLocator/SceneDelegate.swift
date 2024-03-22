@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let window = UIWindow(windowScene: windowScene)
         
-        let onboardingPVC = OnBoardingPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
+        let onboardingPVC = LaunchScreenPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal)
 //        let storyboard = UIStoryboard(name: "LaunchScreen", bundle: nil)
 //        let initialViewController = storyboard.instantiateViewController(withIdentifier: "OnBoardingPageViewController")
         window.rootViewController = onboardingPVC

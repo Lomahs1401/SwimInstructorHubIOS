@@ -7,7 +7,7 @@
 
 import UIKit
 
-class OnBoardingPageViewController: UIPageViewController {
+class LaunchScreenPageViewController: UIPageViewController {
     
     lazy var vcArray: [UIViewController] = {
         let storyBoard = UIStoryboard(name: "LaunchScreen", bundle: nil)
@@ -85,7 +85,7 @@ class OnBoardingPageViewController: UIPageViewController {
     }
 }
 
-extension OnBoardingPageViewController: UIPageViewControllerDataSource {
+extension LaunchScreenPageViewController: UIPageViewControllerDataSource {
     
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
         return vcArray.count

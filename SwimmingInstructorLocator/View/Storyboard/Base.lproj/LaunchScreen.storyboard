@@ -2,24 +2,25 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H7v-ko-Gyl">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--On Boarding Page View Controller-->
+        <!--Launch Screen Page View Controller-->
         <scene sceneID="0aK-S4-dpH">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="H7v-ko-Gyl" customClass="OnBoardingPageViewController" customModule="SwimmingInstructorLocator" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="H7v-ko-Gyl" customClass="LaunchScreenPageViewController" customModule="SwimmingInstructorLocator" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tRk-ka-0jq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="175" y="375"/>
         </scene>
-        <!--On Boarding Content View Controller-->
+        <!--Launch Screen Content View Controller-->
         <scene sceneID="v5P-f7-KJy">
             <objects>
-                <viewController storyboardIdentifier="onboarding_one" modalTransitionStyle="flipHorizontal" id="UyQ-hK-sb1" customClass="OnBoardingContentViewController" customModule="SwimmingInstructorLocator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboarding_one" modalTransitionStyle="flipHorizontal" id="UyQ-hK-sb1" customClass="LaunchScreenContentViewController" customModule="SwimmingInstructorLocator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GrX-nz-4uA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -122,10 +123,10 @@
             </objects>
             <point key="canvasLocation" x="934" y="375"/>
         </scene>
-        <!--On Boarding Content View Controller-->
+        <!--Launch Screen Content View Controller-->
         <scene sceneID="j5n-Rp-Dpy">
             <objects>
-                <viewController storyboardIdentifier="onboarding_two" modalTransitionStyle="flipHorizontal" id="Tb3-uH-qcQ" customClass="OnBoardingContentViewController" customModule="SwimmingInstructorLocator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboarding_two" modalTransitionStyle="flipHorizontal" id="Tb3-uH-qcQ" customClass="LaunchScreenContentViewController" customModule="SwimmingInstructorLocator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zQ0-od-3bz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -228,10 +229,10 @@
             </objects>
             <point key="canvasLocation" x="1714" y="375"/>
         </scene>
-        <!--On Boarding Content View Controller-->
+        <!--Launch Screen Content View Controller-->
         <scene sceneID="D0k-Gk-CsD">
             <objects>
-                <viewController storyboardIdentifier="onboarding_three" modalTransitionStyle="flipHorizontal" id="aVa-jD-nMV" customClass="OnBoardingContentViewController" customModule="SwimmingInstructorLocator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboarding_three" modalTransitionStyle="flipHorizontal" id="aVa-jD-nMV" customClass="LaunchScreenContentViewController" customModule="SwimmingInstructorLocator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9hQ-se-Xkz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
