@@ -10,12 +10,15 @@
 		2BE3AD0832BF780D54561117 /* Pods_SwimmingInstructorLocatorTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A9BE97DCFD85208CE28644B /* Pods_SwimmingInstructorLocatorTests.framework */; };
 		774E1CCEE7C8243BC2191344 /* Pods_SwimmingInstructorLocator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 079879E66BB7E0D71FA7F437 /* Pods_SwimmingInstructorLocator.framework */; };
 		92A5A6D7FB02F4B5A2091B5C /* Pods_SwimmingInstructorLocator_SwimmingInstructorLocatorUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BD45739D2F8C5EF016FBC6F /* Pods_SwimmingInstructorLocator_SwimmingInstructorLocatorUITests.framework */; };
-		E43F10142B9E4CE000602228 /* OnBoardingContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F10132B9E4CE000602228 /* OnBoardingContentViewController.swift */; };
+		E43F10142B9E4CE000602228 /* LaunchScreenContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F10132B9E4CE000602228 /* LaunchScreenContentViewController.swift */; };
 		E43F10162B9EE5A700602228 /* NotificationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F10152B9EE5A700602228 /* NotificationExt.swift */; };
 		E43F109C2B9F650900602228 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F109B2B9F650900602228 /* HomeViewController.swift */; };
 		E43F109E2B9F651800602228 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F109D2B9F651800602228 /* CalendarViewController.swift */; };
 		E43F10A02B9F652100602228 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43F109F2B9F652100602228 /* NotificationViewController.swift */; };
 		E460377B2BACFE7900F6BE91 /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E460377A2BACFE7900F6BE91 /* SideMenuViewController.swift */; };
+		E460377F2BAD18B400F6BE91 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E460377E2BAD18B400F6BE91 /* Authentication.storyboard */; };
+		E46037822BAD240100F6BE91 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46037812BAD240100F6BE91 /* LoginViewController.swift */; };
+		E46037842BAD240F00F6BE91 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46037832BAD240F00F6BE91 /* RegisterViewController.swift */; };
 		E4687BC52B9FD0EB008E7A18 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BC42B9FD0EB008E7A18 /* Appointment.swift */; };
 		E4687BC72B9FD0F4008E7A18 /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BC62B9FD0F4008E7A18 /* Center.swift */; };
 		E4687BC92B9FD103008E7A18 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BC82B9FD103008E7A18 /* User.swift */; };
@@ -33,7 +36,7 @@
 		E4F5D96C2B9DB467006C5BF2 /* SwimmingInstructorLocatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D96B2B9DB467006C5BF2 /* SwimmingInstructorLocatorTests.swift */; };
 		E4F5D9762B9DB467006C5BF2 /* SwimmingInstructorLocatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D9752B9DB467006C5BF2 /* SwimmingInstructorLocatorUITests.swift */; };
 		E4F5D9782B9DB467006C5BF2 /* SwimmingInstructorLocatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D9772B9DB467006C5BF2 /* SwimmingInstructorLocatorUITestsLaunchTests.swift */; };
-		E4F5D9902B9DBEDE006C5BF2 /* OnBoardingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D98E2B9DBEDE006C5BF2 /* OnBoardingPageViewController.swift */; };
+		E4F5D9902B9DBEDE006C5BF2 /* LaunchScreenPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D98E2B9DBEDE006C5BF2 /* LaunchScreenPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,12 +65,15 @@
 		60AC22DFC3612F2E115DCB25 /* Pods-SwimmingInstructorLocator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwimmingInstructorLocator.release.xcconfig"; path = "Target Support Files/Pods-SwimmingInstructorLocator/Pods-SwimmingInstructorLocator.release.xcconfig"; sourceTree = "<group>"; };
 		7256F1AF2F86600E61E153E0 /* Pods-SwimmingInstructorLocatorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwimmingInstructorLocatorTests.debug.xcconfig"; path = "Target Support Files/Pods-SwimmingInstructorLocatorTests/Pods-SwimmingInstructorLocatorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A9BE97DCFD85208CE28644B /* Pods_SwimmingInstructorLocatorTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwimmingInstructorLocatorTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E43F10132B9E4CE000602228 /* OnBoardingContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingContentViewController.swift; sourceTree = "<group>"; };
+		E43F10132B9E4CE000602228 /* LaunchScreenContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenContentViewController.swift; sourceTree = "<group>"; };
 		E43F10152B9EE5A700602228 /* NotificationExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationExt.swift; sourceTree = "<group>"; };
 		E43F109B2B9F650900602228 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		E43F109D2B9F651800602228 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		E43F109F2B9F652100602228 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		E460377A2BACFE7900F6BE91 /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		E460377E2BAD18B400F6BE91 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
+		E46037812BAD240100F6BE91 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E46037832BAD240F00F6BE91 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E4687BC42B9FD0EB008E7A18 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		E4687BC62B9FD0F4008E7A18 /* Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Center.swift; sourceTree = "<group>"; };
 		E4687BC82B9FD103008E7A18 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -89,7 +95,7 @@
 		E4F5D9712B9DB467006C5BF2 /* SwimmingInstructorLocatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwimmingInstructorLocatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F5D9752B9DB467006C5BF2 /* SwimmingInstructorLocatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimmingInstructorLocatorUITests.swift; sourceTree = "<group>"; };
 		E4F5D9772B9DB467006C5BF2 /* SwimmingInstructorLocatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwimmingInstructorLocatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		E4F5D98E2B9DBEDE006C5BF2 /* OnBoardingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingPageViewController.swift; sourceTree = "<group>"; };
+		E4F5D98E2B9DBEDE006C5BF2 /* LaunchScreenPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenPageViewController.swift; sourceTree = "<group>"; };
 		F0259EB9540C7E8FFF08C746 /* Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests.debug.xcconfig"; path = "Target Support Files/Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests/Pods-SwimmingInstructorLocator-SwimmingInstructorLocatorUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,13 +127,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E4687BC22B9F6B1D008E7A18 /* OnBoarding */ = {
+		E46037802BAD23F400F6BE91 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				E4F5D98E2B9DBEDE006C5BF2 /* OnBoardingPageViewController.swift */,
-				E43F10132B9E4CE000602228 /* OnBoardingContentViewController.swift */,
+				E46037812BAD240100F6BE91 /* LoginViewController.swift */,
+				E46037832BAD240F00F6BE91 /* RegisterViewController.swift */,
 			);
-			path = OnBoarding;
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E4687BC22B9F6B1D008E7A18 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E4F5D98E2B9DBEDE006C5BF2 /* LaunchScreenPageViewController.swift */,
+				E43F10132B9E4CE000602228 /* LaunchScreenContentViewController.swift */,
+			);
+			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		E4F5D9452B9DB464006C5BF2 = {
@@ -222,7 +237,8 @@
 		E4F5D9892B9DB54A006C5BF2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				E4687BC22B9F6B1D008E7A18 /* OnBoarding */,
+				E46037802BAD23F400F6BE91 /* Authentication */,
+				E4687BC22B9F6B1D008E7A18 /* LaunchScreen */,
 				E43F109B2B9F650900602228 /* HomeViewController.swift */,
 				E43F109D2B9F651800602228 /* CalendarViewController.swift */,
 				E43F109F2B9F652100602228 /* NotificationViewController.swift */,
@@ -253,6 +269,7 @@
 			children = (
 				E4F5D9572B9DB464006C5BF2 /* Main.storyboard */,
 				E4F5D95F2B9DB466006C5BF2 /* LaunchScreen.storyboard */,
+				E460377E2BAD18B400F6BE91 /* Authentication.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -402,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4F5D9612B9DB466006C5BF2 /* LaunchScreen.storyboard in Resources */,
+				E460377F2BAD18B400F6BE91 /* Authentication.storyboard in Resources */,
 				E4F5D95E2B9DB466006C5BF2 /* Assets.xcassets in Resources */,
 				E4F5D9592B9DB464006C5BF2 /* Main.storyboard in Resources */,
 			);
@@ -535,15 +553,17 @@
 				E43F10A02B9F652100602228 /* NotificationViewController.swift in Sources */,
 				E4F5D9562B9DB464006C5BF2 /* ViewController.swift in Sources */,
 				E4687BC52B9FD0EB008E7A18 /* Appointment.swift in Sources */,
+				E46037822BAD240100F6BE91 /* LoginViewController.swift in Sources */,
 				E47418452BA60E0000EF21AA /* SideMenuTableViewController.swift in Sources */,
 				E43F10162B9EE5A700602228 /* NotificationExt.swift in Sources */,
 				E4687BC72B9FD0F4008E7A18 /* Center.swift in Sources */,
 				E4687BCB2B9FD111008E7A18 /* Instructor.swift in Sources */,
 				E4687BCF2BA07B06008E7A18 /* APICaller.swift in Sources */,
-				E43F10142B9E4CE000602228 /* OnBoardingContentViewController.swift in Sources */,
+				E43F10142B9E4CE000602228 /* LaunchScreenContentViewController.swift in Sources */,
+				E46037842BAD240F00F6BE91 /* RegisterViewController.swift in Sources */,
 				E43F109C2B9F650900602228 /* HomeViewController.swift in Sources */,
 				E4F5D9522B9DB464006C5BF2 /* AppDelegate.swift in Sources */,
-				E4F5D9902B9DBEDE006C5BF2 /* OnBoardingPageViewController.swift in Sources */,
+				E4F5D9902B9DBEDE006C5BF2 /* LaunchScreenPageViewController.swift in Sources */,
 				E43F109E2B9F651800602228 /* CalendarViewController.swift in Sources */,
 				E4687BCD2B9FD118008E7A18 /* Course.swift in Sources */,
 				E4F5D95C2B9DB464006C5BF2 /* SwimmingInstructorLocator.xcdatamodeld in Sources */,

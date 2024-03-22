@@ -13,7 +13,7 @@ enum OnboardingContentType {
     case SlideThree
 }
 
-class OnBoardingContentViewController: UIViewController {
+class LaunchScreenContentViewController: UIViewController {
     
     var contentType: OnboardingContentType = .SlideOne
     
