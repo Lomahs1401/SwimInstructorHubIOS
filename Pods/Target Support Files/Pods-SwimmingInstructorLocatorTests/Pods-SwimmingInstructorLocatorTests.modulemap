@@ -1,0 +1,6 @@
+framework module Pods_SwimmingInstructorLocatorTests {
+  umbrella header "Pods-SwimmingInstructorLocatorTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
