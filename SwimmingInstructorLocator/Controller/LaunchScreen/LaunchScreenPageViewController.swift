@@ -55,7 +55,6 @@ class LaunchScreenPageViewController: UIPageViewController {
             name: NSNotification.Name(Notification.Name.getStartedButtonClicked),
             object: nil
         )
-        
         NotificationCenter.default.addObserver(
             self,
             selector: #selector(switchToMainViewController),
@@ -72,16 +71,12 @@ class LaunchScreenPageViewController: UIPageViewController {
     }
     
     @objc func switchToMainViewController() {
-        // Chuyển đến màn hình chính của ứng dụng
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let mainTabBarController = mainStoryboard.instantiateViewController(withIdentifier: "mainTabBarController") as! UITabBarController
-        // Chuyển đổi root view controller của UIWindow thành mainViewController
-        if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
-            if let window = scene.windows.first {
-                window.rootViewController = mainTabBarController
-                window.makeKeyAndVisible()
-            }
-        }
+        
+        mainTabBarController.hero.isEnabled = true
+        mainTabBarController.hero.modalAnimationType = .zoom
+        self.hero.replaceViewController(with: mainTabBarController)
     }
 }
 

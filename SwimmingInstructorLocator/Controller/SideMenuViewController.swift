@@ -8,14 +8,12 @@
 import UIKit
 
 class SideMenuViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-    
 }
 
 extension SideMenuViewController: UITableViewDataSource {
@@ -60,7 +58,7 @@ extension SideMenuViewController: UITableViewDelegate {
     private func navigateToLoginPage() {
         let authenticationStoryboard = UIStoryboard(name: "Authentication", bundle: nil)
         let authenticationNavBarController = authenticationStoryboard.instantiateViewController(withIdentifier: "authenticationNavBarController") as! UINavigationController
-
+        
         if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene {
             if let window = scene.windows.first {
                 UIView.transition(with: window, duration: 0.3, options: .transitionCrossDissolve, animations: {
