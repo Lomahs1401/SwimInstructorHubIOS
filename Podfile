@@ -7,7 +7,8 @@ target 'SwimmingInstructorLocator' do
 
   # Pods for SwimmingInstructorLocator
   pod 'SideMenu'
-
+  pod 'Hero'
+  
   target 'SwimmingInstructorLocatorTests' do
     inherit! :search_paths
     # Pods for testing

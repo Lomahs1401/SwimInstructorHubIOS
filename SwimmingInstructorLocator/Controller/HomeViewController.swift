@@ -8,24 +8,58 @@
 import UIKit
 import SideMenu
 
+enum CollectionViewType {
+    case center
+    case instructor
+}
+
 class HomeViewController: UIViewController {
     
-//    var menu: SideMenuNavigationController?
-
+    @IBOutlet weak var centerCollectionView: UICollectionView!
+    @IBOutlet weak var instructorCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
-//    private func setupSideMenuView() {
-//        menu = SideMenuNavigationController(rootViewController: ListTableViewController())
-//        menu?.leftSide = true
-//        SideMenuManager.default.addPanGestureToPresent(toView: view)
-//        SideMenuManager.default.leftMenuNavigationController = menu
-//        menu?.setNavigationBarHidden(true, animated: true)
-//    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        enableHero()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        disableHero()
+    }
+}
 
-//    @IBAction func menuTapped(_ sender: Any) {
-//        present(menu!, animated: true, completion: nil)
-//    }
+extension HomeViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        switch collectionView {
+        case centerCollectionView:
+            return 4
+        case instructorCollectionView:
+            return 6
+        default:
+            return 0
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        switch collectionView {
+        case centerCollectionView:
+            let centerCell = collectionView.dequeueReusableCell(withReuseIdentifier: "centerCell", for: indexPath) as! CenterCollectionViewCell
+            return centerCell
+        case instructorCollectionView:
+            let instructorCell = collectionView.dequeueReusableCell(withReuseIdentifier: "instructorCell", for: indexPath) as! InstructorCollectionViewCell
+            return instructorCell
+        default:
+            fatalError("Unexpected collection view")
+        }
+    }
+    
+    
+}
+
+extension HomeViewController: UICollectionViewDelegate {
+    
 }

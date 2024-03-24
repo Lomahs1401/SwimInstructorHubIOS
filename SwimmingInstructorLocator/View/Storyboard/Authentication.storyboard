@@ -163,7 +163,7 @@
                                     </imageView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アカウントはまだでございますか？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHA-DG-hZH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アカウントはまだですか？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHA-DG-hZH">
                                 <rect key="frame" x="30" y="727" width="333" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
@@ -435,14 +435,28 @@
                                     <constraint firstItem="UX1-zW-weD" firstAttribute="leading" secondItem="5HI-va-a07" secondAttribute="trailing" constant="16" id="wNw-7p-bWT"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEH-vp-BAX">
+                                <rect key="frame" x="30" y="706" width="333" height="31"/>
+                                <color key="tintColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ホームページへ戻る">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backToHome:" destination="41v-wq-8UW" eventType="touchUpInside" id="GLj-Hl-mJ2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lct-A5-zZs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="QEH-vp-BAX" firstAttribute="top" secondItem="TOQ-SJ-Tv7" secondAttribute="bottom" constant="30" id="DbI-2C-enU"/>
                             <constraint firstItem="TOQ-SJ-Tv7" firstAttribute="leading" secondItem="lct-A5-zZs" secondAttribute="leading" constant="30" id="FnK-GN-SMS"/>
                             <constraint firstItem="ha8-kv-CQu" firstAttribute="trailing" secondItem="lct-A5-zZs" secondAttribute="trailing" id="Ig1-X1-dpn"/>
                             <constraint firstItem="TOQ-SJ-Tv7" firstAttribute="centerY" secondItem="ez4-Fy-ZuE" secondAttribute="centerY" id="LoZ-n9-kCy"/>
                             <constraint firstItem="lct-A5-zZs" firstAttribute="trailing" secondItem="TOQ-SJ-Tv7" secondAttribute="trailing" constant="30" id="RHd-uM-j5Z"/>
+                            <constraint firstItem="lct-A5-zZs" firstAttribute="trailing" secondItem="QEH-vp-BAX" secondAttribute="trailing" constant="30" id="iuS-K8-tS7"/>
+                            <constraint firstItem="QEH-vp-BAX" firstAttribute="leading" secondItem="lct-A5-zZs" secondAttribute="leading" constant="30" id="jLg-KX-NXK"/>
                             <constraint firstItem="ha8-kv-CQu" firstAttribute="leading" secondItem="lct-A5-zZs" secondAttribute="leading" id="o0p-Pw-Zvo"/>
                             <constraint firstItem="ha8-kv-CQu" firstAttribute="top" secondItem="ez4-Fy-ZuE" secondAttribute="top" id="wec-vq-HRf"/>
                         </constraints>
@@ -468,6 +482,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isHeroEnabled" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="heroModalAnimationTypeString" value="zoom"/>
+                    </userDefinedRuntimeAttributes>
                     <connections>
                         <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="UGO-zw-zfF"/>
                     </connections>
@@ -493,13 +511,13 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGray6Color">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
