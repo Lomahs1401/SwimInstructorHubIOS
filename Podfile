@@ -8,7 +8,11 @@ target 'SwimmingInstructorLocator' do
   # Pods for SwimmingInstructorLocator
   pod 'SideMenu'
   pod 'Hero'
-  
+  pod 'Kingfisher'
+  pod 'NVActivityIndicatorView'
+  pod 'Alamofire'
+  pod 'SwiftyJSON'
+
   target 'SwimmingInstructorLocatorTests' do
     inherit! :search_paths
     # Pods for testing
