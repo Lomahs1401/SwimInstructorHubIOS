@@ -361,38 +361,6 @@
             </objects>
             <point key="canvasLocation" x="1788.5496183206105" y="-797.18309859154931"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="kEv-jq-kQj">
-            <objects>
-                <viewController id="HuR-r3-LIm" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bgg-Ov-4NR">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aQd-VE-35P" customClass="NVActivityIndicatorView" customModule="NVActivityIndicatorView">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
-                                        <real key="value" value="0.0"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="O3j-Gm-DNv"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="aQd-VE-35P" firstAttribute="trailing" secondItem="O3j-Gm-DNv" secondAttribute="trailing" id="CtS-aK-RvM"/>
-                            <constraint firstAttribute="bottom" secondItem="aQd-VE-35P" secondAttribute="bottom" id="IpI-NR-DJA"/>
-                            <constraint firstItem="aQd-VE-35P" firstAttribute="leading" secondItem="O3j-Gm-DNv" secondAttribute="leading" id="tTk-BF-J5P"/>
-                            <constraint firstItem="aQd-VE-35P" firstAttribute="top" secondItem="bgg-Ov-4NR" secondAttribute="top" id="wLx-I3-8uU"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="r0s-yz-94a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3052.6717557251909" y="-978.16901408450713"/>
-        </scene>
         <!--Calendar-->
         <scene sceneID="Wg2-nF-4Hr">
             <objects>

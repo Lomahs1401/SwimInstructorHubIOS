@@ -45,9 +45,9 @@ class HomeViewController: UIViewController {
         super.viewWillAppear(animated)
         
         enableHero()
-        activityIndicator.startAnimating()
+//        activityIndicator.startAnimating()
         presenter.onStart()
-        presenter.getListCenters()
+//        presenter.getListCenters()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
