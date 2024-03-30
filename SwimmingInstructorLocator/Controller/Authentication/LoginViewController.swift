@@ -13,10 +13,24 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var facebookImg: UIImageView!
     @IBOutlet weak var googleImg: UIImageView!
     @IBOutlet weak var twitterImg: UIImageView!
+    @IBOutlet weak var mailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var mailValidation: UILabel!
+    @IBOutlet weak var passwordValidation: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configView()
+        
+        mailValidation.isHidden = true
+        passwordValidation.isHidden = true
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,7 +45,7 @@ class LoginViewController: UIViewController {
     
     private func configView() {
         // Corner round view
-        loginFormView.layer.cornerRadius = 30
+        loginFormView.layer.cornerRadius = 24
         // Add shadow
         loginFormView.layer.shadowColor = UIColor.black.cgColor
         loginFormView.layer.shadowOpacity = 0.3
@@ -49,5 +63,19 @@ class LoginViewController: UIViewController {
         
         self.hero.replaceViewController(with: mainTabBarController)
         navigationController?.isNavigationBarHidden = true
+    }
+    
+    @IBAction func signIn(_ sender: UIButton) {
+        if let email = mailTextField.text, email.isEmpty {
+            mailValidation.isHidden = false
+        } else {
+            mailValidation.isHidden = true
+        }
+        
+        if let password = passwordTextField.text, password.isEmpty {
+            passwordValidation.isHidden = false
+        } else {
+            passwordValidation.isHidden = true
+        }
     }
 }

@@ -6,20 +6,39 @@
 //
 
 import UIKit
+import MBRadioCheckboxButton
 
 class RegisterViewController: UIViewController {
-
+    
     @IBOutlet weak var registerFormView: UIView!
-    @IBOutlet weak var btnRoleStudent: UIButton!
-    @IBOutlet weak var btnRoleTeacher: UIButton!
+    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var usernameValidation: UILabel!
+    @IBOutlet weak var mailValidation: UILabel!
+    @IBOutlet weak var passwordValidation: UILabel!
+    @IBOutlet weak var roleStudentLabel: UILabel!
+    @IBOutlet weak var roleInstructorLabel: UILabel!
+    @IBOutlet weak var btnRoleStudent: RadioButton!
+    @IBOutlet weak var btnRoleTeacher: RadioButton!
     @IBOutlet weak var btnBackToHome: UIButton!
     
-    private var roleStudent = true // Default
-    private var roleTeacher = false
+    private var isRoleStudentChecked = true
+    private var isRoleTeacherChecked = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configView()
+        
+        usernameValidation.isHidden = true
+        mailValidation.isHidden = true
+        passwordValidation.isHidden = true
+        
+        btnRoleStudent.delegate = self
+        btnRoleTeacher.delegate = self
+        
+        btnRoleStudent.isOn = isRoleStudentChecked
+        btnRoleTeacher.isOn = isRoleTeacherChecked
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -34,7 +53,7 @@ class RegisterViewController: UIViewController {
     
     private func configView() {
         // Corner round view
-        registerFormView.layer.cornerRadius = 30
+        registerFormView.layer.cornerRadius = 24
         // Add shadow
         registerFormView.layer.shadowColor = UIColor.black.cgColor
         registerFormView.layer.shadowOpacity = 0.3
@@ -43,25 +62,7 @@ class RegisterViewController: UIViewController {
         registerFormView.layer.masksToBounds = false
     }
     
-    @IBAction func didTappedRoleStudent(_ sender: UIButton) {
-        if roleStudent {
-            return
-        } else {
-            btnRoleStudent.imageView?.image = UIImage(named: "radio_button_on")
-            btnRoleTeacher.imageView?.image = UIImage(named: "radio_button_off")
-        }
-    }
-    
-    @IBAction func didTappedRoleTeacher(_ sender: Any) {
-        if roleTeacher {
-            return
-        } else {
-            btnRoleStudent.imageView?.image = UIImage(named: "radio_button_off")
-            btnRoleTeacher.imageView?.image = UIImage(named: "radio_button_on")
-        }
-    }
-    
-    @IBAction func backToHome(_ sender: Any) {
+    @IBAction func backToHome(_ sender: UIButton) {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let mainTabBarController = mainStoryboard.instantiateViewController(withIdentifier: "mainTabBarController") as! UITabBarController
         
@@ -69,5 +70,65 @@ class RegisterViewController: UIViewController {
         mainTabBarController.hero.modalAnimationType = .zoom
         self.hero.replaceViewController(with: mainTabBarController)
         navigationController?.isNavigationBarHidden = true
+    }
+    
+    @IBAction func signUp(_ sender: UIButton) {
+        if let username = usernameTextField.text, username.isEmpty {
+            usernameValidation.isHidden = false
+        } else {
+            usernameValidation.isHidden = true
+        }
+        
+        if let email = emailTextField.text, email.isEmpty {
+            mailValidation.isHidden = false
+        } else {
+            mailValidation.isHidden = true
+        }
+        
+        if let password = passwordTextField.text, password.isEmpty {
+            passwordValidation.isHidden = false
+        } else {
+            passwordValidation.isHidden = true
+        }
+        
+        if usernameValidation.isHidden && mailValidation.isHidden && passwordValidation.isHidden {
+            let currentRole = isRoleStudentChecked ? roleStudentLabel.text : roleInstructorLabel.text
+            let alertController = UIAlertController(title: "Confirm", message: "Create new \(currentRole!) account?", preferredStyle: .alert)
+            
+            let confirmAction = UIAlertAction(title: "Yes", style: .default) { _ in
+                self.createUserWithCurrentRole()
+            }
+            
+            let cancelAction = UIAlertAction(title: "No", style: .default) { _ in
+                alertController.dismiss(animated: true, completion: nil)
+            }
+            
+            alertController.addAction(confirmAction)
+            alertController.addAction(cancelAction)
+            
+            present(alertController, animated: true, completion: nil)
+        } else {
+            return
+        }
+    }
+    
+    private func createUserWithCurrentRole() {
+    }
+}
+
+extension RegisterViewController: RadioButtonDelegate {
+    func radioButtonDidSelect(_ button: MBRadioCheckboxButton.RadioButton) {
+        if button == btnRoleStudent {
+            isRoleStudentChecked = true
+            isRoleTeacherChecked = false
+        } else if button == btnRoleTeacher {
+            isRoleTeacherChecked = true
+            isRoleStudentChecked = false
+        }
+    }
+    
+    func radioButtonDidDeselect(_ button: MBRadioCheckboxButton.RadioButton) {
+        print("Role student status: \(isRoleStudentChecked)")
+        print("Role teacher status: \(isRoleTeacherChecked)")
     }
 }
