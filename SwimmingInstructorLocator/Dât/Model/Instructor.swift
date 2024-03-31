@@ -27,6 +27,7 @@ struct Instructor: Codable {
     }
 }
 
-struct InstructorResponse: Codable {
-    let instructors: [Instructor]
+struct InstructorApiResponse: Codable {
+    let message: String
+    let data: [Instructor]
 }

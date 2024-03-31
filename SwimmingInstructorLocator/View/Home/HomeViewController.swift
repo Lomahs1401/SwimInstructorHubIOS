@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
     
     private var presenter: HomeContractPresenter!
     private var centerRepo: CenterRepo!
-    private var centerService: CenterService!
+    private var centerService: CenterServiceProto!
     private var activityIndicator: NVActivityIndicatorView!
     private var listCenters: [Center] = []
     
@@ -43,17 +43,14 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
         enableHero()
 //        activityIndicator.startAnimating()
-        presenter.onStart()
 //        presenter.getListCenters()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         disableHero()
-        presenter.onStop()
     }
 }
 

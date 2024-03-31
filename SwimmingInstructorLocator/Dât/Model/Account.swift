@@ -7,38 +7,42 @@
 
 import Foundation
 
-struct User: Codable {
+struct Account: Codable {
     let id: String
     let username: String
-    let fullName: String
     let email: String
     let avatar: String
     let gender: Int
     let address: String
     let phone: String
     let type: Int
-    let weight: String
-    let height: String
     let createdAt: String
     let updatedAt: String
+    let studentInfo: [Student]?
+    let instructorInfo: [Instructor]?
     
     enum CodingKeys: String, CodingKey {
         case id = "_id"
         case username
-        case fullName = "fullname"
         case email
         case avatar
         case gender
         case address
         case phone
         case type
-        case weight
-        case height
         case createdAt
         case updatedAt
+        case studentInfo = "student_info"
+        case instructorInfo = "instructor_info"
     }
 }
 
-struct UserResponse: Codable {
-    let users: [User]
+struct AccountApiResponse: Codable {
+    let message: String
+    let data: Account
+    
+    enum CodingKeys: String, CodingKey {
+        case message
+        case data
+    }
 }

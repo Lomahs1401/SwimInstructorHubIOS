@@ -9,18 +9,10 @@ import Foundation
 
 class HomePresenter: HomeContractPresenter {
     private weak var view: HomeContractView?
-    private let centerService: CenterService
+    private let centerService: CenterServiceProto
     
-    init(centerService: CenterService) {
+    init(centerService: CenterServiceProto) {
         self.centerService = centerService
-    }
-    
-    func onStart() {
-        // Triển khai logic khi bắt đầu
-    }
-    
-    func onStop() {
-        // Triển khai logic khi kết thúc
     }
     
     func attachView(view: HomeContractView) {

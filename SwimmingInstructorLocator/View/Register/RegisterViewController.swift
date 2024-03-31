@@ -8,6 +8,17 @@
 import UIKit
 import MBRadioCheckboxButton
 
+enum AccountType {
+    case ROLE_STUDENT
+    case ROLE_INSTRUCTOR
+}
+
+enum ValidationLabelType {
+    case username
+    case email
+    case password
+}
+
 class RegisterViewController: UIViewController {
     
     @IBOutlet weak var registerFormView: UIView!
@@ -22,22 +33,35 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var btnRoleStudent: RadioButton!
     @IBOutlet weak var btnRoleTeacher: RadioButton!
     
-    private var isRoleStudentChecked = true
+    private var isRoleStudentChecked = true // Default Role Student
     private var isRoleTeacherChecked = false
+    
+    private var presenter: RegisterContractPresenter!
+    private var authRepo: AuthRepo!
+    private var authService: AuthServiceProto!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configView()
+        configRegisterFormView()
+        hideValidationMsg()
         
-        usernameValidation.isHidden = true
-        mailValidation.isHidden = true
-        passwordValidation.isHidden = true
+        btnRoleStudent.isOn = isRoleStudentChecked
+        btnRoleTeacher.isOn = isRoleTeacherChecked
         
         btnRoleStudent.delegate = self
         btnRoleTeacher.delegate = self
         
-        btnRoleStudent.isOn = isRoleStudentChecked
-        btnRoleTeacher.isOn = isRoleTeacherChecked
+        authRepo = AuthRepo()
+        authService = AuthService(authRepo: authRepo)
+        presenter = RegisterPresenter(authService: authService)
+        presenter.attachView(view: self)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -50,7 +74,7 @@ class RegisterViewController: UIViewController {
         disableHero()
     }
     
-    private func configView() {
+    private func configRegisterFormView() {
         // Corner round view
         registerFormView.layer.cornerRadius = 24
         // Add shadow
@@ -59,6 +83,12 @@ class RegisterViewController: UIViewController {
         registerFormView.layer.shadowOffset = CGSize(width: 0, height: 4)
         registerFormView.layer.shadowRadius = 4
         registerFormView.layer.masksToBounds = false
+    }
+    
+    private func hideValidationMsg() {
+        usernameValidation.isHidden = true
+        mailValidation.isHidden = true
+        passwordValidation.isHidden = true
     }
     
     @IBAction func backToHome(_ sender: UIButton) {
@@ -71,26 +101,16 @@ class RegisterViewController: UIViewController {
         navigationController?.isNavigationBarHidden = true
     }
     
-    @IBAction func signUp(_ sender: UIButton) {
-        if let username = usernameTextField.text, username.isEmpty {
-            usernameValidation.isHidden = false
-        } else {
-            usernameValidation.isHidden = true
-        }
+    @IBAction func handleClickSignUp(_ sender: UIButton) {
+        let username = usernameTextField.text ?? ""
+        let email = emailTextField.text ?? ""
+        let password = passwordTextField.text ?? ""
         
-        if let email = emailTextField.text, email.isEmpty {
-            mailValidation.isHidden = false
-        } else {
-            mailValidation.isHidden = true
-        }
+        let registerDTO = RegisterDTO(username: username, email: email, password: password, type: isRoleStudentChecked ? 0 : 1)
         
-        if let password = passwordTextField.text, password.isEmpty {
-            passwordValidation.isHidden = false
-        } else {
-            passwordValidation.isHidden = true
-        }
+        let isRegisterFormValid = presenter.validateRegisterForm(registerDTO: registerDTO)
         
-        if usernameValidation.isHidden && mailValidation.isHidden && passwordValidation.isHidden {
+        if isRegisterFormValid {
             let currentRole = getCurrentRoleString()
             let createAccountMsg = NSLocalizedString(currentRole, comment: "")
             let alertController = UIAlertController(title: NSLocalizedString("Confirm", comment: ""), message: NSLocalizedString(createAccountMsg, comment: ""), preferredStyle: .alert)
@@ -100,24 +120,18 @@ class RegisterViewController: UIViewController {
             }
             
             let confirmAction = UIAlertAction(title: NSLocalizedString("Yes", comment: ""), style: .default) { _ in
-                self.createUserWithCurrentRole()
+                self.presenter.signUp(registerDTO: registerDTO)
             }
             
             alertController.addAction(cancelAction)
             alertController.addAction(confirmAction)
             
             present(alertController, animated: true, completion: nil)
-        } else {
-            return
         }
     }
     
     private func getCurrentRoleString() -> String {
         return isRoleStudentChecked ? "CreateNewStudentAccount" : "CreateNewInstructorAccount"
-    }
-    
-    private func createUserWithCurrentRole() {
-        
     }
 }
 
@@ -135,5 +149,43 @@ extension RegisterViewController: RadioButtonDelegate {
     func radioButtonDidDeselect(_ button: MBRadioCheckboxButton.RadioButton) {
         print("Role student status: \(isRoleStudentChecked)")
         print("Role teacher status: \(isRoleTeacherChecked)")
+    }
+}
+
+extension RegisterViewController: RegisterContractView {
+    func showValidationError(message: String, validationLabel: ValidationLabelType) {
+        switch validationLabel {
+        case .username:
+            usernameValidation.isHidden = false
+            usernameValidation.text = message
+        case .email:
+            mailValidation.isHidden = false
+            mailValidation.text = message
+        case .password:
+            passwordValidation.isHidden = false
+            passwordValidation.text = message
+        }
+    }
+    
+    func clearValidationError(validationLabel: ValidationLabelType) {
+        switch validationLabel {
+        case .username:
+            usernameValidation.isHidden = true
+            usernameValidation.text = ""
+        case .email:
+            mailValidation.isHidden = true
+            mailValidation.text = ""
+        case .password:
+            passwordValidation.isHidden = true
+            passwordValidation.text = ""
+        }
+    }
+    
+    func onSignUpSuccess() {
+        
+    }
+    
+    func onSignUpError() {
+        
     }
 }

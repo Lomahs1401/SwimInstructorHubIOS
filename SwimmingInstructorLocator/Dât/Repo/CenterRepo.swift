@@ -10,7 +10,7 @@ import Alamofire
 
 class CenterRepo {
     func getCenters(completion: @escaping (Result<[Center], Error>) -> Void) {
-        AF.request(Constant.BASE_URL + "/centers").responseDecodable(of: CenterAPI.CenterApiResponse.self) { dataResponse in
+        AF.request(Constant.BASE_URL + "/centers", method: .get).responseDecodable(of: CenterApiResponse.self) { dataResponse in
             switch dataResponse.result {
             case .success(let centerResponse):
                 completion(.success(centerResponse.data))
