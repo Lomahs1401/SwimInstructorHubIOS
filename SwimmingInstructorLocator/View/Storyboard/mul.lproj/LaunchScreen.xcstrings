@@ -1,0 +1,348 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "7u2-qy-izw.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Unlock your aquatic potential with the perfect swimming instructor. Dive into a world of self-assurance and mastery\"; ObjectID = \"7u2-qy-izw\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Unlock your aquatic potential with the perfect swimming instructor. Dive into a world of self-assurance and mastery"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完璧な水泳インストラクターとともに、水中の潜在能力を引き出そう。自己確信と熟達の世界へダイブしよう"
+          }
+        }
+      }
+    },
+    "edU-43-lin.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"NEXT\"; ObjectID = \"edU-43-lin\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "NEXT"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "次"
+          }
+        }
+      }
+    },
+    "edU-43-lin.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"edU-43-lin\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    },
+    "ENw-YG-KRi.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Swim Smarter, Not Harder\"; ObjectID = \"ENw-YG-KRi\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Swim Smarter, Not Harder"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "無理せず、賢く泳ぐ"
+          }
+        }
+      }
+    },
+    "fjm-xK-iEp.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"10K+ success stories and counting\"; ObjectID = \"fjm-xK-iEp\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "10K+ success stories and counting"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10,000 以上の成功事例と数えています"
+          }
+        }
+      }
+    },
+    "Hqo-r8-dKu.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Dive Into Confidence\"; ObjectID = \"Hqo-r8-dKu\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Dive Into Confidence"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "自信を深めよう"
+          }
+        }
+      }
+    },
+    "iJq-4d-l7h.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"GET STARTED\"; ObjectID = \"iJq-4d-l7h\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "GET STARTED"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ゲットスタート"
+          }
+        }
+      }
+    },
+    "iJq-4d-l7h.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"iJq-4d-l7h\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    },
+    "iR6-hu-BFL.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Make Waves, Learn Splashes\"; ObjectID = \"iR6-hu-BFL\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Make Waves, Learn Splashes"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "波を作り、水しぶきを学ぶ"
+          }
+        }
+      }
+    },
+    "k6e-a6-8ZX.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"SKIP\"; ObjectID = \"k6e-a6-8ZX\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "SKIP"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スキップ"
+          }
+        }
+      }
+    },
+    "k6e-a6-8ZX.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"k6e-a6-8ZX\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    },
+    "TDS-4U-dy7.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"From beginners to advanced, find skilled instructors to help you navigate the waters and make every splash count\"; ObjectID = \"TDS-4U-dy7\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "From beginners to advanced, find skilled instructors to help you navigate the waters and make every splash count"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "初心者から上級者まで、巧妙なインストラクターを見つけて水中で航行し、あらゆる水しぶきを意味深くしましょう"
+          }
+        }
+      }
+    },
+    "tEd-Uz-KlN.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"10K+ success stories and counting\"; ObjectID = \"tEd-Uz-KlN\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "10K+ success stories and counting"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10,000 以上の成功事例と数えています"
+          }
+        }
+      }
+    },
+    "Tf9-lO-T9z.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Swim smarter, refine your technique, and enjoy the water like never before. Your aquatic adventure starts here\"; ObjectID = \"Tf9-lO-T9z\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Swim smarter, refine your technique, and enjoy the water like never before. Your aquatic adventure starts here"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "賢く泳いで、テクニックを磨き、かつてないほど水を楽しんでください。あなたの水中冒険はここから始まります"
+          }
+        }
+      }
+    },
+    "VuH-fe-OZe.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"SKIP\"; ObjectID = \"VuH-fe-OZe\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "SKIP"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スキップ"
+          }
+        }
+      }
+    },
+    "VuH-fe-OZe.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"VuH-fe-OZe\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    },
+    "XQq-PM-N3S.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"10K+ success stories and counting\"; ObjectID = \"XQq-PM-N3S\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "10K+ success stories and counting"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "10,000 以上の成功事例と数えています"
+          }
+        }
+      }
+    },
+    "YNz-JP-ISd.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"NEXT\"; ObjectID = \"YNz-JP-ISd\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "NEXT"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "次"
+          }
+        }
+      }
+    },
+    "YNz-JP-ISd.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"YNz-JP-ISd\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

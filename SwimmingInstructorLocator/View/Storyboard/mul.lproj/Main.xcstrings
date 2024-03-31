@@ -1,0 +1,420 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "2gN-pX-T76.title" : {
+      "comment" : "Class = \"UINavigationItem\"; title = \"CALENDAR\"; ObjectID = \"2gN-pX-T76\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "CALENDAR"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カレンダー"
+          }
+        }
+      }
+    },
+    "4Gn-fV-6Pq.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"4Gn-fV-6Pq\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    },
+    "8tb-pb-dSx.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Top Instructors\"; ObjectID = \"8tb-pb-dSx\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Top Instructors"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "トップ教師"
+          }
+        }
+      }
+    },
+    "eya-5R-cLU.title" : {
+      "comment" : "Class = \"UITabBarItem\"; title = \"Calendar\"; ObjectID = \"eya-5R-cLU\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Calendar"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カレンダー"
+          }
+        }
+      }
+    },
+    "fcu-f3-dKU.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"962 Ngô Quyền - Sơn Trà\"; ObjectID = \"fcu-f3-dKU\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "962 Ngô Quyền - Sơn Trà"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "962 Ngô Quyền - Sơn Trà"
+          }
+        }
+      }
+    },
+    "ftF-Vg-6Wf.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"ftF-Vg-6Wf\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    },
+    "Gdq-hT-QT6.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"See All ➜\"; ObjectID = \"Gdq-hT-QT6\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "See All ➜"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全て見る ➜"
+          }
+        }
+      }
+    },
+    "Gdq-hT-QT6.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"Gdq-hT-QT6\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    },
+    "I1b-ik-0fd.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Trung tâm dạy bơi kèm Đà Nẵng BP - Swimming Center\"; ObjectID = \"I1b-ik-0fd\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Trung tâm dạy bơi kèm Đà Nẵng BP - Swimming Center"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trung tâm dạy bơi kèm Đà Nẵng BP - Swimming Center"
+          }
+        }
+      }
+    },
+    "IfT-hB-bfe.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"NOTIFICATION\"; ObjectID = \"IfT-hB-bfe\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "NOTIFICATION"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知"
+          }
+        }
+      }
+    },
+    "iUL-vf-eE1.title" : {
+      "comment" : "Class = \"UINavigationItem\"; title = \"NOTIFICATION\"; ObjectID = \"iUL-vf-eE1\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "NOTIFICATION"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知"
+          }
+        }
+      }
+    },
+    "MSl-Se-g7m.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"CALENDAR\"; ObjectID = \"MSl-Se-g7m\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "CALENDAR"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "カレンダー"
+          }
+        }
+      }
+    },
+    "NiH-ZR-0Bl.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"You're not logged yet\"; ObjectID = \"NiH-ZR-0Bl\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "You're not logged yet"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "まだログインしていません"
+          }
+        }
+      }
+    },
+    "pfY-Zy-c1i.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"pfY-Zy-c1i\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    },
+    "QFx-OB-5It.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"(+84) 0935 468 419\"; ObjectID = \"QFx-OB-5It\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "(+84) 0935 468 419"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "(+84) 0935 468 419"
+          }
+        }
+      }
+    },
+    "TH0-8i-Moi.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Top Centers\"; ObjectID = \"TH0-8i-Moi\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Top Centers"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "トップセンター"
+          }
+        }
+      }
+    },
+    "Xm7-hV-9Hl.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"See All ➜\"; ObjectID = \"Xm7-hV-9Hl\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "See All ➜"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "全て見る ➜"
+          }
+        }
+      }
+    },
+    "Xm7-hV-9Hl.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"Xm7-hV-9Hl\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    },
+    "XMO-9P-8gA.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Nguyễn Thị Ánh Viên\"; ObjectID = \"XMO-9P-8gA\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Nguyễn Thị Ánh Viên"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nguyễn Thị Ánh Viên さん"
+          }
+        }
+      }
+    },
+    "Yon-2d-ePE.title" : {
+      "comment" : "Class = \"UINavigationItem\"; title = \"HOME\"; ObjectID = \"Yon-2d-ePE\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "HOME"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホーム"
+          }
+        }
+      }
+    },
+    "yz7-am-qPO.title" : {
+      "comment" : "Class = \"UITabBarItem\"; title = \"Home\"; ObjectID = \"yz7-am-qPO\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Home"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホーム"
+          }
+        }
+      }
+    },
+    "ZS3-jh-EFc.badgeValue" : {
+      "comment" : "Class = \"UITabBarItem\"; badgeValue = \"5\"; ObjectID = \"ZS3-jh-EFc\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "5"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "5"
+          }
+        }
+      }
+    },
+    "ZS3-jh-EFc.title" : {
+      "comment" : "Class = \"UITabBarItem\"; title = \"Notification\"; ObjectID = \"ZS3-jh-EFc\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Notification"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "通知"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
