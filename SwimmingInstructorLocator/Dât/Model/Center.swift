@@ -33,6 +33,12 @@ struct Center: Codable {
     }
 }
 
-struct CenterResponse: Codable {
-    let centers: [Center]
+struct CenterApiResponse: Decodable {
+    let message: String
+    let data: [Center]
+    
+    enum CodingKeys: String, CodingKey {
+        case message
+        case data
+    }
 }

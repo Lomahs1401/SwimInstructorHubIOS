@@ -64,7 +64,6 @@ class LaunchScreenPageViewController: UIPageViewController {
     }
     
     @objc func navigateToNextPage() {
-        // Chuyển đến trang kế tiếp
         if let currentViewController = self.viewControllers?.first, let nextViewController = dataSource?.pageViewController(self, viewControllerAfter: currentViewController) {
             setViewControllers([nextViewController], direction: .forward, animated: true, completion: nil)
         }
@@ -81,7 +80,6 @@ class LaunchScreenPageViewController: UIPageViewController {
 }
 
 extension LaunchScreenPageViewController: UIPageViewControllerDataSource {
-    
     func presentationCount(for pageViewController: UIPageViewController) -> Int {
         return vcArray.count
     }

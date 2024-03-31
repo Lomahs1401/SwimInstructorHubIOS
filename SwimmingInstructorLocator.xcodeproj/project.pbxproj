@@ -27,15 +27,34 @@
 		E46037842BAD240F00F6BE91 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46037832BAD240F00F6BE91 /* RegisterViewController.swift */; };
 		E4687BC52B9FD0EB008E7A18 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BC42B9FD0EB008E7A18 /* Appointment.swift */; };
 		E4687BC72B9FD0F4008E7A18 /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BC62B9FD0F4008E7A18 /* Center.swift */; };
-		E4687BC92B9FD103008E7A18 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BC82B9FD103008E7A18 /* User.swift */; };
+		E4687BC92B9FD103008E7A18 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BC82B9FD103008E7A18 /* Account.swift */; };
 		E4687BCB2B9FD111008E7A18 /* Instructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BCA2B9FD111008E7A18 /* Instructor.swift */; };
 		E4687BCD2B9FD118008E7A18 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BCC2B9FD118008E7A18 /* Course.swift */; };
 		E4687BCF2BA07B06008E7A18 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4687BCE2BA07B06008E7A18 /* APICaller.swift */; };
 		E46BA7CF2BB6AB2400B45053 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7CE2BB6AB2400B45053 /* Constant.swift */; };
-		E46BA7D12BB6ABCF00B45053 /* CenterAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7D02BB6ABCF00B45053 /* CenterAPI.swift */; };
 		E46BA7D32BB82FD900B45053 /* StringExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7D22BB82FD900B45053 /* StringExt.swift */; };
 		E46BA7D62BB8347000B45053 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46BA7D82BB8347000B45053 /* Authentication.storyboard */; };
 		E46BA7DD2BB8A7A300B45053 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = E46BA7DC2BB8A7A300B45053 /* Localizable.xcstrings */; };
+		E46BA7E42BB93E4C00B45053 /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7E32BB93E4C00B45053 /* LoginContract.swift */; };
+		E46BA7E62BB93E5100B45053 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7E52BB93E5100B45053 /* LoginPresenter.swift */; };
+		E46BA7E82BB93EBF00B45053 /* AuthServiceProto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7E72BB93EBF00B45053 /* AuthServiceProto.swift */; };
+		E46BA7EA2BB9409100B45053 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7E92BB9409100B45053 /* AuthService.swift */; };
+		E46BA7EC2BB940A400B45053 /* AuthRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7EB2BB940A400B45053 /* AuthRepo.swift */; };
+		E46BA7EE2BB940B300B45053 /* CourseRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7ED2BB940B300B45053 /* CourseRepo.swift */; };
+		E46BA7F02BB940BC00B45053 /* AppointmentRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7EF2BB940BC00B45053 /* AppointmentRepo.swift */; };
+		E46BA7F22BB940FB00B45053 /* InstructorRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7F12BB940FB00B45053 /* InstructorRepo.swift */; };
+		E46BA7F62BB9413D00B45053 /* AppointmentServiceProto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7F52BB9413D00B45053 /* AppointmentServiceProto.swift */; };
+		E46BA7F82BB9414800B45053 /* CourseServiceProto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7F72BB9414800B45053 /* CourseServiceProto.swift */; };
+		E46BA7FA2BB9415A00B45053 /* InstructorServiceProto.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7F92BB9415A00B45053 /* InstructorServiceProto.swift */; };
+		E46BA7FC2BB9416400B45053 /* AppointmentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7FB2BB9416400B45053 /* AppointmentService.swift */; };
+		E46BA7FE2BB9417400B45053 /* CourseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7FD2BB9417400B45053 /* CourseService.swift */; };
+		E46BA8002BB9417E00B45053 /* InstructorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA7FF2BB9417D00B45053 /* InstructorService.swift */; };
+		E46BA8032BB944A000B45053 /* LoginDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA8022BB944A000B45053 /* LoginDTO.swift */; };
+		E46BA8052BB944A900B45053 /* RegisterDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA8042BB944A900B45053 /* RegisterDTO.swift */; };
+		E46BA8072BB944B000B45053 /* AppointmentDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA8062BB944B000B45053 /* AppointmentDTO.swift */; };
+		E46BA8092BB9455E00B45053 /* RegisterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA8082BB9455E00B45053 /* RegisterContract.swift */; };
+		E46BA80B2BB9456200B45053 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA80A2BB9456200B45053 /* RegisterPresenter.swift */; };
+		E46BA80D2BB9740400B45053 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46BA80C2BB9740400B45053 /* Student.swift */; };
 		E47418452BA60E0000EF21AA /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E47418442BA60E0000EF21AA /* SideMenuTableViewController.swift */; };
 		E4CE8D6C2BAE9E9C0094B271 /* HeroHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4CE8D6B2BAE9E9C0094B271 /* HeroHelper.swift */; };
 		E4F5D9522B9DB464006C5BF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F5D9512B9DB464006C5BF2 /* AppDelegate.swift */; };
@@ -93,18 +112,37 @@
 		E46037832BAD240F00F6BE91 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E4687BC42B9FD0EB008E7A18 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
 		E4687BC62B9FD0F4008E7A18 /* Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Center.swift; sourceTree = "<group>"; };
-		E4687BC82B9FD103008E7A18 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E4687BC82B9FD103008E7A18 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		E4687BCA2B9FD111008E7A18 /* Instructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Instructor.swift; sourceTree = "<group>"; };
 		E4687BCC2B9FD118008E7A18 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		E4687BCE2BA07B06008E7A18 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		E46BA7CE2BB6AB2400B45053 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
-		E46BA7D02BB6ABCF00B45053 /* CenterAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterAPI.swift; sourceTree = "<group>"; };
 		E46BA7D22BB82FD900B45053 /* StringExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExt.swift; sourceTree = "<group>"; };
 		E46BA7D72BB8347000B45053 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Authentication.storyboard; sourceTree = "<group>"; };
 		E46BA7D92BB8347000B45053 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/Authentication.xcstrings; sourceTree = "<group>"; };
 		E46BA7DC2BB8A7A300B45053 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		E46BA7DE2BB8A9C400B45053 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/LaunchScreen.xcstrings; sourceTree = "<group>"; };
 		E46BA7DF2BB8A9C500B45053 /* mul */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = mul; path = mul.lproj/Main.xcstrings; sourceTree = "<group>"; };
+		E46BA7E32BB93E4C00B45053 /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		E46BA7E52BB93E5100B45053 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		E46BA7E72BB93EBF00B45053 /* AuthServiceProto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProto.swift; sourceTree = "<group>"; };
+		E46BA7E92BB9409100B45053 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E46BA7EB2BB940A400B45053 /* AuthRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepo.swift; sourceTree = "<group>"; };
+		E46BA7ED2BB940B300B45053 /* CourseRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseRepo.swift; sourceTree = "<group>"; };
+		E46BA7EF2BB940BC00B45053 /* AppointmentRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentRepo.swift; sourceTree = "<group>"; };
+		E46BA7F12BB940FB00B45053 /* InstructorRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorRepo.swift; sourceTree = "<group>"; };
+		E46BA7F52BB9413D00B45053 /* AppointmentServiceProto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentServiceProto.swift; sourceTree = "<group>"; };
+		E46BA7F72BB9414800B45053 /* CourseServiceProto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseServiceProto.swift; sourceTree = "<group>"; };
+		E46BA7F92BB9415A00B45053 /* InstructorServiceProto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorServiceProto.swift; sourceTree = "<group>"; };
+		E46BA7FB2BB9416400B45053 /* AppointmentService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentService.swift; sourceTree = "<group>"; };
+		E46BA7FD2BB9417400B45053 /* CourseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseService.swift; sourceTree = "<group>"; };
+		E46BA7FF2BB9417D00B45053 /* InstructorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructorService.swift; sourceTree = "<group>"; };
+		E46BA8022BB944A000B45053 /* LoginDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginDTO.swift; sourceTree = "<group>"; };
+		E46BA8042BB944A900B45053 /* RegisterDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDTO.swift; sourceTree = "<group>"; };
+		E46BA8062BB944B000B45053 /* AppointmentDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDTO.swift; sourceTree = "<group>"; };
+		E46BA8082BB9455E00B45053 /* RegisterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContract.swift; sourceTree = "<group>"; };
+		E46BA80A2BB9456200B45053 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		E46BA80C2BB9740400B45053 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 		E47418442BA60E0000EF21AA /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		E4CE8D6B2BAE9E9C0094B271 /* HeroHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroHelper.swift; sourceTree = "<group>"; };
 		E4F5D94E2B9DB464006C5BF2 /* SwimmingInstructorLocator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwimmingInstructorLocator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,37 +233,27 @@
 			path = SideMenu;
 			sourceTree = "<group>";
 		};
-		E42E63D22BB1A6040000FA71 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				E42E63CC2BB19FCF0000FA71 /* HomeContract.swift */,
-				E42E63CA2BB19E4F0000FA71 /* HomePresenter.swift */,
-				E43F109B2B9F650900602228 /* HomeViewController.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 		E42E63D32BB1A65A0000FA71 /* Repo */ = {
 			isa = PBXGroup;
 			children = (
+				E46BA7EF2BB940BC00B45053 /* AppointmentRepo.swift */,
+				E46BA7EB2BB940A400B45053 /* AuthRepo.swift */,
 				E42E63DC2BB1C4420000FA71 /* CenterRepo.swift */,
+				E46BA7ED2BB940B300B45053 /* CourseRepo.swift */,
+				E46BA7F12BB940FB00B45053 /* InstructorRepo.swift */,
 			);
 			path = Repo;
-			sourceTree = "<group>";
-		};
-		E42E63D42BB1A6730000FA71 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				E46BA7D02BB6ABCF00B45053 /* CenterAPI.swift */,
-			);
-			path = API;
 			sourceTree = "<group>";
 		};
 		E42E63D52BB1A6790000FA71 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				E42E63D92BB1A6E10000FA71 /* Protocol */,
+				E46BA7FB2BB9416400B45053 /* AppointmentService.swift */,
+				E46BA7E92BB9409100B45053 /* AuthService.swift */,
 				E42E63D72BB1A6DE0000FA71 /* CenterService.swift */,
+				E46BA7FD2BB9417400B45053 /* CourseService.swift */,
+				E46BA7FF2BB9417D00B45053 /* InstructorService.swift */,
 			);
 			name = Service;
 			path = "Sẻvice";
@@ -234,6 +262,7 @@
 		E42E63D62BB1A6AD0000FA71 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E46BA8012BB9448E00B45053 /* DTO */,
 				E4F5D98D2B9DB561006C5BF2 /* Model */,
 				E42E63D32BB1A65A0000FA71 /* Repo */,
 				E42E63D52BB1A6790000FA71 /* Service */,
@@ -245,7 +274,11 @@
 		E42E63D92BB1A6E10000FA71 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				E46BA7F52BB9413D00B45053 /* AppointmentServiceProto.swift */,
+				E46BA7E72BB93EBF00B45053 /* AuthServiceProto.swift */,
 				E42E63DA2BB1A6EA0000FA71 /* CenterServiceProto.swift */,
+				E46BA7F72BB9414800B45053 /* CourseServiceProto.swift */,
+				E46BA7F92BB9415A00B45053 /* InstructorServiceProto.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -253,20 +286,10 @@
 		E43A48972BAEE3FA00469395 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				E42E63D22BB1A6040000FA71 /* UI */,
 				E43A48982BAEE45200469395 /* CenterCollectionViewCell.swift */,
 				E43A489C2BAF901400469395 /* InstructorCollectionViewCell.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		E46037802BAD23F400F6BE91 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-				E46037812BAD240100F6BE91 /* LoginViewController.swift */,
-				E46037832BAD240F00F6BE91 /* RegisterViewController.swift */,
-			);
-			path = Authentication;
 			sourceTree = "<group>";
 		};
 		E4687BC22B9F6B1D008E7A18 /* LaunchScreen */ = {
@@ -276,6 +299,46 @@
 				E43F10132B9E4CE000602228 /* LaunchScreenContentViewController.swift */,
 			);
 			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		E46BA7E02BB937FC00B45053 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E42E63CC2BB19FCF0000FA71 /* HomeContract.swift */,
+				E42E63CA2BB19E4F0000FA71 /* HomePresenter.swift */,
+				E43F109B2B9F650900602228 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E46BA7E12BB9387D00B45053 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E46BA7E32BB93E4C00B45053 /* LoginContract.swift */,
+				E46BA7E52BB93E5100B45053 /* LoginPresenter.swift */,
+				E46037812BAD240100F6BE91 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E46BA7E22BB9388100B45053 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				E46BA8082BB9455E00B45053 /* RegisterContract.swift */,
+				E46BA80A2BB9456200B45053 /* RegisterPresenter.swift */,
+				E46037832BAD240F00F6BE91 /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		E46BA8012BB9448E00B45053 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				E46BA8022BB944A000B45053 /* LoginDTO.swift */,
+				E46BA8042BB944A900B45053 /* RegisterDTO.swift */,
+				E46BA8062BB944B000B45053 /* AppointmentDTO.swift */,
+			);
+			path = DTO;
 			sourceTree = "<group>";
 		};
 		E4F5D9452B9DB464006C5BF2 = {
@@ -304,7 +367,6 @@
 			isa = PBXGroup;
 			children = (
 				E46BA7DC2BB8A7A300B45053 /* Localizable.xcstrings */,
-				E42E63D42BB1A6730000FA71 /* API */,
 				E4F5D9882B9DB53D006C5BF2 /* Constants */,
 				E4F5D9892B9DB54A006C5BF2 /* Controller */,
 				E42E63D62BB1A6AD0000FA71 /* Data */,
@@ -367,7 +429,6 @@
 			isa = PBXGroup;
 			children = (
 				E43A48972BAEE3FA00469395 /* Home */,
-				E46037802BAD23F400F6BE91 /* Authentication */,
 				E4687BC22B9F6B1D008E7A18 /* LaunchScreen */,
 				E42E63C52BB199800000FA71 /* UI */,
 			);
@@ -377,6 +438,9 @@
 		E4F5D98A2B9DB54D006C5BF2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E46BA7E22BB9388100B45053 /* Register */,
+				E46BA7E12BB9387D00B45053 /* Login */,
+				E46BA7E02BB937FC00B45053 /* Home */,
 				E4F5D98C2B9DB558006C5BF2 /* Storyboard */,
 				E4F5D98B2B9DB555006C5BF2 /* Xib */,
 			);
@@ -405,9 +469,10 @@
 			children = (
 				E4687BC42B9FD0EB008E7A18 /* Appointment.swift */,
 				E4687BC62B9FD0F4008E7A18 /* Center.swift */,
-				E4687BC82B9FD103008E7A18 /* User.swift */,
+				E4687BC82B9FD103008E7A18 /* Account.swift */,
 				E4687BCA2B9FD111008E7A18 /* Instructor.swift */,
 				E4687BCC2B9FD118008E7A18 /* Course.swift */,
+				E46BA80C2BB9740400B45053 /* Student.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -677,34 +742,53 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E46BA80B2BB9456200B45053 /* RegisterPresenter.swift in Sources */,
 				E4CE8D6C2BAE9E9C0094B271 /* HeroHelper.swift in Sources */,
-				E4687BC92B9FD103008E7A18 /* User.swift in Sources */,
+				E4687BC92B9FD103008E7A18 /* Account.swift in Sources */,
+				E46BA7FE2BB9417400B45053 /* CourseService.swift in Sources */,
 				E42E63DB2BB1A6EA0000FA71 /* CenterServiceProto.swift in Sources */,
 				E43F10A02B9F652100602228 /* NotificationViewController.swift in Sources */,
 				E4687BC52B9FD0EB008E7A18 /* Appointment.swift in Sources */,
 				E46BA7D32BB82FD900B45053 /* StringExt.swift in Sources */,
+				E46BA7F22BB940FB00B45053 /* InstructorRepo.swift in Sources */,
+				E46BA8052BB944A900B45053 /* RegisterDTO.swift in Sources */,
 				E46037822BAD240100F6BE91 /* LoginViewController.swift in Sources */,
+				E46BA7F82BB9414800B45053 /* CourseServiceProto.swift in Sources */,
 				E47418452BA60E0000EF21AA /* SideMenuTableViewController.swift in Sources */,
 				E42E63CD2BB19FCF0000FA71 /* HomeContract.swift in Sources */,
+				E46BA7F02BB940BC00B45053 /* AppointmentRepo.swift in Sources */,
 				E43F10162B9EE5A700602228 /* NotificationExt.swift in Sources */,
+				E46BA7E82BB93EBF00B45053 /* AuthServiceProto.swift in Sources */,
+				E46BA7E42BB93E4C00B45053 /* LoginContract.swift in Sources */,
 				E4687BC72B9FD0F4008E7A18 /* Center.swift in Sources */,
+				E46BA80D2BB9740400B45053 /* Student.swift in Sources */,
+				E46BA8032BB944A000B45053 /* LoginDTO.swift in Sources */,
 				E4687BCB2B9FD111008E7A18 /* Instructor.swift in Sources */,
 				E4687BCF2BA07B06008E7A18 /* APICaller.swift in Sources */,
+				E46BA8072BB944B000B45053 /* AppointmentDTO.swift in Sources */,
 				E43A489D2BAF901400469395 /* InstructorCollectionViewCell.swift in Sources */,
+				E46BA7E62BB93E5100B45053 /* LoginPresenter.swift in Sources */,
 				E43F10142B9E4CE000602228 /* LaunchScreenContentViewController.swift in Sources */,
 				E46037842BAD240F00F6BE91 /* RegisterViewController.swift in Sources */,
 				E43F109C2B9F650900602228 /* HomeViewController.swift in Sources */,
 				E46BA7CF2BB6AB2400B45053 /* Constant.swift in Sources */,
 				E42E63CB2BB19E4F0000FA71 /* HomePresenter.swift in Sources */,
+				E46BA8092BB9455E00B45053 /* RegisterContract.swift in Sources */,
+				E46BA7FA2BB9415A00B45053 /* InstructorServiceProto.swift in Sources */,
+				E46BA7FC2BB9416400B45053 /* AppointmentService.swift in Sources */,
 				E4F5D9522B9DB464006C5BF2 /* AppDelegate.swift in Sources */,
 				E4F5D9902B9DBEDE006C5BF2 /* LaunchScreenPageViewController.swift in Sources */,
+				E46BA7EE2BB940B300B45053 /* CourseRepo.swift in Sources */,
 				E43F109E2B9F651800602228 /* CalendarViewController.swift in Sources */,
 				E42E63D82BB1A6DE0000FA71 /* CenterService.swift in Sources */,
-				E46BA7D12BB6ABCF00B45053 /* CenterAPI.swift in Sources */,
 				E4687BCD2B9FD118008E7A18 /* Course.swift in Sources */,
+				E46BA7F62BB9413D00B45053 /* AppointmentServiceProto.swift in Sources */,
+				E46BA7EA2BB9409100B45053 /* AuthService.swift in Sources */,
 				E4F5D95C2B9DB464006C5BF2 /* SwimmingInstructorLocator.xcdatamodeld in Sources */,
+				E46BA8002BB9417E00B45053 /* InstructorService.swift in Sources */,
 				E43A48992BAEE45200469395 /* CenterCollectionViewCell.swift in Sources */,
 				E460377B2BACFE7900F6BE91 /* SideMenuViewController.swift in Sources */,
+				E46BA7EC2BB940A400B45053 /* AuthRepo.swift in Sources */,
 				E42E63DD2BB1C4420000FA71 /* CenterRepo.swift in Sources */,
 				E4F5D9542B9DB464006C5BF2 /* SceneDelegate.swift in Sources */,
 			);

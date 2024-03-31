@@ -120,6 +120,142 @@
         }
       }
     },
+    "ValidateEmailBlank" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Email is required"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メールは必須"
+          }
+        }
+      }
+    },
+    "ValidateEmailInvalid" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Email is not valid"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メールが有効ではありません"
+          }
+        }
+      }
+    },
+    "ValidatePasswordBlank" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password is required"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パスワードは必須"
+          }
+        }
+      }
+    },
+    "ValidatePasswordFormat" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must contain 1 uppercase, 1 alphanumeric and 1 special character"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パスワードは、少なくとも1つの大文字、1つの英数字、および1つの特殊文字を含む必要があります"
+          }
+        }
+      }
+    },
+    "ValidatePasswordLength" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must be between 6 and 18 characters"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パスワードは6文字から16文字の間である必要があります"
+          }
+        }
+      }
+    },
+    "ValidateUsernameBlank" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Username is required"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ユーザー名は必須"
+          }
+        }
+      }
+    },
+    "ValidateUsernameDigit" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The first character cannot be a numeric "
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "最初の文字は数字にできません"
+          }
+        }
+      }
+    },
+    "ValidateUsernameLength" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Username must be between 4 and 18 character"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ユーザー名は4文字から18文字の間である必要があります"
+          }
+        }
+      }
+    },
     "Yes" : {
       "extractionState" : "manual",
       "localizations" : {

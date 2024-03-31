@@ -12,8 +12,6 @@ protocol HomeContractView: AnyObject {
 }
 
 protocol HomeContractPresenter {
-    func onStart()
-    func onStop()
     func attachView(view: HomeContractView)
     func detachView()
     func getListCenters()
