@@ -21,7 +21,6 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var roleInstructorLabel: UILabel!
     @IBOutlet weak var btnRoleStudent: RadioButton!
     @IBOutlet weak var btnRoleTeacher: RadioButton!
-    @IBOutlet weak var btnBackToHome: UIButton!
     
     private var isRoleStudentChecked = true
     private var isRoleTeacherChecked = false
@@ -92,19 +91,20 @@ class RegisterViewController: UIViewController {
         }
         
         if usernameValidation.isHidden && mailValidation.isHidden && passwordValidation.isHidden {
-            let currentRole = isRoleStudentChecked ? roleStudentLabel.text : roleInstructorLabel.text
-            let alertController = UIAlertController(title: "Confirm", message: "Create new \(currentRole!) account?", preferredStyle: .alert)
+            let currentRole = getCurrentRoleString()
+            let createAccountMsg = NSLocalizedString(currentRole, comment: "")
+            let alertController = UIAlertController(title: NSLocalizedString("Confirm", comment: ""), message: NSLocalizedString(createAccountMsg, comment: ""), preferredStyle: .alert)
             
-            let confirmAction = UIAlertAction(title: "Yes", style: .default) { _ in
-                self.createUserWithCurrentRole()
-            }
-            
-            let cancelAction = UIAlertAction(title: "No", style: .default) { _ in
+            let cancelAction = UIAlertAction(title: NSLocalizedString("No", comment: ""), style: .default) { _ in
                 alertController.dismiss(animated: true, completion: nil)
             }
             
-            alertController.addAction(confirmAction)
+            let confirmAction = UIAlertAction(title: NSLocalizedString("Yes", comment: ""), style: .default) { _ in
+                self.createUserWithCurrentRole()
+            }
+            
             alertController.addAction(cancelAction)
+            alertController.addAction(confirmAction)
             
             present(alertController, animated: true, completion: nil)
         } else {
@@ -112,7 +112,12 @@ class RegisterViewController: UIViewController {
         }
     }
     
+    private func getCurrentRoleString() -> String {
+        return isRoleStudentChecked ? "CreateNewStudentAccount" : "CreateNewInstructorAccount"
+    }
+    
     private func createUserWithCurrentRole() {
+        
     }
 }
 

@@ -1,0 +1,708 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "3vY-8c-kiF.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Instructor\"; ObjectID = \"3vY-8c-kiF\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Instructor"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "教師"
+          }
+        }
+      }
+    },
+    "5HI-va-a07.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Student\"; ObjectID = \"5HI-va-a07\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Student"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "学習者"
+          }
+        }
+      }
+    },
+    "6ss-Do-Pxk.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Email\"; ObjectID = \"6ss-Do-Pxk\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Email"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メール"
+          }
+        }
+      }
+    },
+    "9DT-Er-CNy.placeholder" : {
+      "comment" : "Class = \"UITextField\"; placeholder = \"john.doe@gmail.com\"; ObjectID = \"9DT-Er-CNy\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "john.doe@gmail.com"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "john.doe@gmail.com"
+          }
+        }
+      }
+    },
+    "asG-YD-g7e.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"SIGN UP\"; ObjectID = \"asG-YD-g7e\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "SIGN UP"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サインアップ"
+          }
+        }
+      }
+    },
+    "asG-YD-g7e.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"asG-YD-g7e\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    },
+    "b6m-fU-9vf.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Email\"; ObjectID = \"b6m-fU-9vf\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Email"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メール"
+          }
+        }
+      }
+    },
+    "BeH-yW-grd.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"*\"; ObjectID = \"BeH-yW-grd\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "*"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "*"
+          }
+        }
+      }
+    },
+    "c8d-Aq-JGP.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Return Home Page\"; ObjectID = \"c8d-Aq-JGP\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Return Home Page"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホームページへ戻る"
+          }
+        }
+      }
+    },
+    "c8d-Aq-JGP.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"c8d-Aq-JGP\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    },
+    "C9q-VV-kN1.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"*\"; ObjectID = \"C9q-VV-kN1\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "*"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "*"
+          }
+        }
+      }
+    },
+    "CAI-Xk-8qe.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Password\"; ObjectID = \"CAI-Xk-8qe\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Password"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パスワード"
+          }
+        }
+      }
+    },
+    "cws-yO-Tsu.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"*\"; ObjectID = \"cws-yO-Tsu\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "*"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "*"
+          }
+        }
+      }
+    },
+    "EHA-DG-hZH.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Don't have account yet?\"; ObjectID = \"EHA-DG-hZH\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Don't have account yet?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アカウントはまだですか？"
+          }
+        }
+      }
+    },
+    "Eit-as-mt1.placeholder" : {
+      "comment" : "Class = \"UITextField\"; placeholder = \"john.doe\"; ObjectID = \"Eit-as-mt1\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "john.doe"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "john.doe"
+          }
+        }
+      }
+    },
+    "gby-hQ-cQs.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Email is required\"; ObjectID = \"gby-hQ-cQs\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Email is required"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メールは必須"
+          }
+        }
+      }
+    },
+    "hab-V7-3sV.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Or\"; ObjectID = \"hab-V7-3sV\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Or"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "または"
+          }
+        }
+      }
+    },
+    "lKE-5j-6va.placeholder" : {
+      "comment" : "Class = \"UITextField\"; placeholder = \"********\"; ObjectID = \"lKE-5j-6va\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "********"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "********"
+          }
+        }
+      }
+    },
+    "M6M-hC-Se1.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Login\"; ObjectID = \"M6M-hC-Se1\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Login"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ログイン"
+          }
+        }
+      }
+    },
+    "QEH-vp-BAX.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Return Home Page\"; ObjectID = \"QEH-vp-BAX\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Return Home Page"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ホームページへ戻る"
+          }
+        }
+      }
+    },
+    "QEH-vp-BAX.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"QEH-vp-BAX\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    },
+    "QI8-w9-gNM.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Username\"; ObjectID = \"QI8-w9-gNM\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Username"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ユーザー名"
+          }
+        }
+      }
+    },
+    "Qvm-gb-KM2.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Email is required\"; ObjectID = \"Qvm-gb-KM2\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Email is required"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "メールは必須"
+          }
+        }
+      }
+    },
+    "Rzc-o4-Yi0.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Password is required\"; ObjectID = \"Rzc-o4-Yi0\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Password is required"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パスワードは必須"
+          }
+        }
+      }
+    },
+    "SLQ-c2-x5u.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Role:\"; ObjectID = \"SLQ-c2-x5u\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Role:"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ロール："
+          }
+        }
+      }
+    },
+    "SlV-c6-7ew.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Password\"; ObjectID = \"SlV-c6-7ew\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Password"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パスワード"
+          }
+        }
+      }
+    },
+    "SOW-AR-od1.placeholder" : {
+      "comment" : "Class = \"UITextField\"; placeholder = \"john.doe@gmail.com\"; ObjectID = \"SOW-AR-od1\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "john.doe@gmail.com"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "john.doe@gmail.com"
+          }
+        }
+      }
+    },
+    "Tpu-od-3i4.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Let's start towards a bright future for swimming\"; ObjectID = \"Tpu-od-3i4\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Let's start towards a bright future for swimming"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "明るい水泳の未来に向けて始めよう"
+          }
+        }
+      }
+    },
+    "UX1-zW-weD.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"UX1-zW-weD\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    },
+    "WQu-0d-cRn.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"Sign Up Here\"; ObjectID = \"WQu-0d-cRn\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Sign Up Here"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "こちらでサインアップ"
+          }
+        }
+      }
+    },
+    "WQu-0d-cRn.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"WQu-0d-cRn\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    },
+    "Wvl-JH-5Le.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"*\"; ObjectID = \"Wvl-JH-5Le\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "*"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "*"
+          }
+        }
+      }
+    },
+    "xGw-IE-Fsu.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Create Account\"; ObjectID = \"xGw-IE-Fsu\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Create Account"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アカウント作成"
+          }
+        }
+      }
+    },
+    "xP8-bk-F2p.configuration.title" : {
+      "comment" : "Class = \"UIButton\"; configuration.title = \"SIGN IN\"; ObjectID = \"xP8-bk-F2p\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "SIGN IN"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サインイン"
+          }
+        }
+      }
+    },
+    "xP8-bk-F2p.normalTitle" : {
+      "comment" : "Class = \"UIButton\"; normalTitle = \"Button\"; ObjectID = \"xP8-bk-F2p\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Button"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ボタン"
+          }
+        }
+      }
+    },
+    "y55-vX-F6U.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Username is required\"; ObjectID = \"y55-vX-F6U\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Username is required"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ユーザー名は必須"
+          }
+        }
+      }
+    },
+    "Zak-qZ-itQ.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"Password is required\"; ObjectID = \"Zak-qZ-itQ\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "Password is required"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "パスワードは必須"
+          }
+        }
+      }
+    },
+    "zet-rr-GgW.text" : {
+      "comment" : "Class = \"UILabel\"; text = \"*\"; ObjectID = \"zet-rr-GgW\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "*"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "*"
+          }
+        }
+      }
+    },
+    "Zfs-rY-384.placeholder" : {
+      "comment" : "Class = \"UITextField\"; placeholder = \"********\"; ObjectID = \"Zfs-rY-384\";",
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "********"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "********"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

@@ -482,7 +482,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="ZIN-Zg-hYq"/>
                     <connections>
-                        <outlet property="btnBackToHome" destination="QEH-vp-BAX" id="B1J-0V-S7l"/>
                         <outlet property="btnRoleStudent" destination="CX2-m4-YCV" id="bav-pQ-yPo"/>
                         <outlet property="btnRoleTeacher" destination="UX1-zW-weD" id="qF8-WS-w1i"/>
                         <outlet property="emailTextField" destination="9DT-Er-CNy" id="R7i-zB-Gj3"/>
