@@ -2,8 +2,9 @@
 This app is converted and developed from this [Android App](https://github.com/Lomahs1401/SwimInstructorHubAndroid)
 
 # Environment:
-BE: MongoDB Atlas, deploy on vercel
-FE: Swift 5.0, iOS 16, XCode 15.0
+**BE**: MongoDB Atlas, deploy on vercel
+
+**FE**: Swift 5.0, iOS 16, XCode 15.0
 # Current features: View list of centers, register an account, English and Japanese language localization (string catalog)
 # Demo with english localization
 
