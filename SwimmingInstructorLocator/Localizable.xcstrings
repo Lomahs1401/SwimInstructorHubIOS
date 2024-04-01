@@ -1,7 +1,7 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Community" : {
+    "community" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -18,7 +18,7 @@
         }
       }
     },
-    "Confirm" : {
+    "confirm" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -35,7 +35,24 @@
         }
       }
     },
-    "CreateNewInstructorAccount" : {
+    "create_account_successed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Account created successfully!"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "アカウントが正常に作成されました"
+          }
+        }
+      }
+    },
+    "create_new_instructor_account" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -52,7 +69,7 @@
         }
       }
     },
-    "CreateNewStudentAccount" : {
+    "create_new_student_account" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -69,7 +86,75 @@
         }
       }
     },
-    "No" : {
+    "email_already_exists_error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An account with this email already exists"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "このメールアドレスを持つアカウントはすでに存在します"
+          }
+        }
+      }
+    },
+    "error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エラー"
+          }
+        }
+      }
+    },
+    "invalid_response_error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid response from server"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "サーバーからの無効な応答"
+          }
+        }
+      }
+    },
+    "network_error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Network error. Please try again later"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ネットワークエラー。後でもう一度試してください"
+          }
+        }
+      }
+    },
+    "no" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -86,7 +171,7 @@
         }
       }
     },
-    "Profile" : {
+    "profile" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -103,7 +188,7 @@
         }
       }
     },
-    "Setting" : {
+    "setting" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -120,7 +205,41 @@
         }
       }
     },
-    "ValidateEmailBlank" : {
+    "success" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Success"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "成功"
+          }
+        }
+      }
+    },
+    "undefined_error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oops. Try again later"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "おっと。あとでもう一度試してみてください"
+          }
+        }
+      }
+    },
+    "validate_email_blank" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -137,7 +256,7 @@
         }
       }
     },
-    "ValidateEmailInvalid" : {
+    "validate_email_invalid" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -154,7 +273,7 @@
         }
       }
     },
-    "ValidatePasswordBlank" : {
+    "validate_password_blank" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -171,7 +290,7 @@
         }
       }
     },
-    "ValidatePasswordFormat" : {
+    "validate_password_format" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -188,7 +307,7 @@
         }
       }
     },
-    "ValidatePasswordLength" : {
+    "validate_password_length" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -205,7 +324,7 @@
         }
       }
     },
-    "ValidateUsernameBlank" : {
+    "validate_username_blank" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -222,7 +341,7 @@
         }
       }
     },
-    "ValidateUsernameDigit" : {
+    "validate_username_digit" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -239,7 +358,7 @@
         }
       }
     },
-    "ValidateUsernameLength" : {
+    "validate_username_length" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {
@@ -256,7 +375,7 @@
         }
       }
     },
-    "Yes" : {
+    "yes" : {
       "extractionState" : "manual",
       "localizations" : {
         "en" : {

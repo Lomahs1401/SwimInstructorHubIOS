@@ -9,7 +9,7 @@ import Foundation
 
 protocol AuthServiceProto {
     func login(_ loginDTO: LoginDTO, completion: @escaping (Result<Account, Error>) -> Void)
-    func register(_ registerDTO: RegisterDTO, completion: @escaping (Result<Account, Error>) -> Void)
+    func register(_ registerDTO: RegisterDTO, completion: @escaping (Result<AccountApiResponse, AuthError>) -> Void)
     func logout(completion: @escaping (Result<Account, Error>) -> Void)
     func getCurrentUser(completion: @escaping (Result<Account, Error>) -> Void)
 }

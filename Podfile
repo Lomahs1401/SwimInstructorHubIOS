@@ -13,7 +13,7 @@ target 'SwimmingInstructorLocator' do
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'MBRadioCheckboxButton'
-  pod "EFSweetAlert-iOS"
+  pod 'SCLAlertView'
   
   target 'SwimmingInstructorLocatorTests' do
     inherit! :search_paths

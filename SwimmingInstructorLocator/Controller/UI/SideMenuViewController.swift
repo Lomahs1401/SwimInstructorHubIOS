@@ -27,13 +27,13 @@ extension SideMenuViewController: UITableViewDataSource {
         switch indexPath.row {
         case 0:
             cell.imageView?.image = UIImage(systemName: "person.circle")
-            cell.textLabel?.text = NSLocalizedString("Profile", comment: "")
+            cell.textLabel?.text = NSLocalizedString("profile", comment: "")
         case 1:
             cell.imageView?.image = UIImage(systemName: "gear.circle")
-            cell.textLabel?.text = NSLocalizedString("Setting", comment: "")
+            cell.textLabel?.text = NSLocalizedString("setting", comment: "")
         case 2:
             cell.imageView?.image = UIImage(systemName: "link.circle")
-            cell.textLabel?.text = NSLocalizedString("Community", comment: "")
+            cell.textLabel?.text = NSLocalizedString("community", comment: "")
         default:
             break
         }
