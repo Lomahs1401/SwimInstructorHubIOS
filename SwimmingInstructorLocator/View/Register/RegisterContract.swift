@@ -10,8 +10,8 @@ import Foundation
 protocol RegisterContractView: AnyObject {
     func showValidationError(message: String, validationLabel: ValidationLabelType)
     func clearValidationError(validationLabel: ValidationLabelType)
-    func onSignUpSuccess()
-    func onSignUpError()
+    func onSignUpSuccess(account: AccountApiResponse)
+    func onSignUpError(error: AuthError)
 }
 
 protocol RegisterContractPresenter {

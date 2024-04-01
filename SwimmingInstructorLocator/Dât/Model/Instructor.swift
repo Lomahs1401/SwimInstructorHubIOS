@@ -18,7 +18,7 @@ struct Instructor: Codable {
     
     enum CodingKeys: String, CodingKey {
         case id = "_id"
-        case instructorName = "teacher_name"
+        case instructorName = "instructor_name"
         case description
         case image
         case certificate

@@ -34,10 +34,17 @@ class RegisterPresenter: RegisterContractPresenter {
     func signUp(registerDTO: RegisterDTO) {
         authService.register(registerDTO) { [weak self] result in
             switch result {
-            case .success(_):
-                self?.view?.onSignUpSuccess()
-            case .failure(_):
-                self?.view?.onSignUpError()
+            case .success(let newAccount):
+                self?.view?.onSignUpSuccess(account: newAccount)
+            case .failure(let error):
+                switch error {
+                case .invalidResponse:
+                    self?.view?.onSignUpError(error: .invalidResponse)
+                case .networkError:
+                    self?.view?.onSignUpError(error: .networkError)
+                case .emailAlreadyExists:
+                    self?.view?.onSignUpError(error: .emailAlreadyExists)
+                }
             }
         }
     }
@@ -45,19 +52,19 @@ class RegisterPresenter: RegisterContractPresenter {
     private func validateUsername(_ username: String) -> Bool {
         // Username is required
         if username.isEmpty {
-            view?.showValidationError(message: NSLocalizedString("ValidateUsernameBlank", comment: ""), validationLabel: .username)
+            view?.showValidationError(message: NSLocalizedString("validate_username_blank", comment: ""), validationLabel: .username)
             return false
         }
         
         // Username must be between 4 and 18 characters
         if !isUsernameLengthValid(username) {
-            view?.showValidationError(message: NSLocalizedString("ValidateUsernameLength", comment: ""), validationLabel: .username)
+            view?.showValidationError(message: NSLocalizedString("validate_username_length", comment: ""), validationLabel: .username)
             return false
         }
         
         // The first character cannot be a numeric
         if startsWithNumeric(username) {
-            view?.showValidationError(message: NSLocalizedString("ValidateUsernameDigit", comment: ""), validationLabel: .username)
+            view?.showValidationError(message: NSLocalizedString("validate_username_digit", comment: ""), validationLabel: .username)
             return false
         }
         
@@ -71,13 +78,13 @@ class RegisterPresenter: RegisterContractPresenter {
     private func validateEmail(_ email: String) -> Bool {
         // Email is required
         if email.isEmpty {
-            view?.showValidationError(message: NSLocalizedString("ValidateEmailBlank", comment: ""), validationLabel: .email)
+            view?.showValidationError(message: NSLocalizedString("validate_email_blank", comment: ""), validationLabel: .email)
             return false
         }
         
         // Email is invalid
         if !isEmailValid(email) {
-            view?.showValidationError(message: NSLocalizedString("ValidateEmailInvalid", comment: ""), validationLabel: .email)
+            view?.showValidationError(message: NSLocalizedString("validate_email_invalid", comment: ""), validationLabel: .email)
             return false
         }
         
@@ -91,19 +98,19 @@ class RegisterPresenter: RegisterContractPresenter {
     private func validatePassword(_ password: String) -> Bool {
         // Password is required
         if password.isEmpty {
-            view?.showValidationError(message: NSLocalizedString("ValidatePasswordBlank", comment: ""), validationLabel: .password)
+            view?.showValidationError(message: NSLocalizedString("validate_password_blank", comment: ""), validationLabel: .password)
             return false
         }
         
         // Password must be between 6 and 18 characters
         if !isPasswordLengthValid(password) {
-            view?.showValidationError(message: NSLocalizedString("ValidatePasswordLength", comment: ""), validationLabel: .password)
+            view?.showValidationError(message: NSLocalizedString("validate_password_length", comment: ""), validationLabel: .password)
             return false
         }
         
         // Password must contain 1 uppercase character, 1 alphanumeric character, and 1 special character
         if !isPasswordFormatValid(password) {
-            view?.showValidationError(message: NSLocalizedString("ValidatePasswordFormat", comment: ""), validationLabel: .password)
+            view?.showValidationError(message: NSLocalizedString("validate_password_format", comment: ""), validationLabel: .password)
             return false
         }
         

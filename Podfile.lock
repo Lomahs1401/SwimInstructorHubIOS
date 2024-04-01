@@ -6,6 +6,7 @@ PODS:
   - NVActivityIndicatorView (5.1.1):
     - NVActivityIndicatorView/Base (= 5.1.1)
   - NVActivityIndicatorView/Base (5.1.1)
+  - SCLAlertView (0.8)
   - SideMenu (6.5.0)
   - SwiftyJSON (5.0.1)
 
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - Kingfisher
   - MBRadioCheckboxButton
   - NVActivityIndicatorView
+  - SCLAlertView
   - SideMenu
   - SwiftyJSON
 
@@ -25,6 +27,7 @@ SPEC REPOS:
     - Kingfisher
     - MBRadioCheckboxButton
     - NVActivityIndicatorView
+    - SCLAlertView
     - SideMenu
     - SwiftyJSON
 
@@ -34,9 +37,10 @@ SPEC CHECKSUMS:
   Kingfisher: b9c985d864d43515f404f1ef4a8ce7d802ace3ac
   MBRadioCheckboxButton: 6e2a2cdc441e292e45b64c4e65eb8fc1fc05eef2
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  SCLAlertView: 6a77bb2edfc65e04dbe57725546cb4107a506b85
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 5dfc39ad6f7bc7923b9f876e589b02acc9a4f143
+PODFILE CHECKSUM: d98940e57d9e97ed4fe120ca21f5324e9d4df2a1
 
 COCOAPODS: 1.15.2

@@ -259,7 +259,7 @@
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TOQ-SJ-Tv7" userLabel="Register Form View">
-                                <rect key="frame" x="30" y="161" width="333" height="530"/>
+                                <rect key="frame" x="30" y="153" width="333" height="546"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGw-IE-Fsu">
                                         <rect key="frame" x="12" y="19.999999999999996" width="309" height="33.666666666666657"/>
@@ -325,7 +325,7 @@
                                         <rect key="frame" x="12" y="345.33333333333331" width="309" height="34"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username is required" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y55-vX-F6U">
                                         <rect key="frame" x="12" y="193.66666666666669" width="309" height="13.333333333333343"/>
@@ -414,7 +414,7 @@
                                     <constraint firstItem="y55-vX-F6U" firstAttribute="top" secondItem="Eit-as-mt1" secondAttribute="bottom" constant="6" id="4iL-lA-Xzy"/>
                                     <constraint firstItem="Zak-qZ-itQ" firstAttribute="leading" secondItem="TOQ-SJ-Tv7" secondAttribute="leading" constant="12" id="52n-rd-V6Y"/>
                                     <constraint firstAttribute="trailing" secondItem="IIG-az-YSO" secondAttribute="trailing" constant="12" id="5nS-FO-be3"/>
-                                    <constraint firstAttribute="height" constant="530" id="99x-r6-0nD"/>
+                                    <constraint firstAttribute="height" constant="546" id="99x-r6-0nD"/>
                                     <constraint firstItem="6ss-Do-Pxk" firstAttribute="top" secondItem="Eit-as-mt1" secondAttribute="bottom" constant="36" id="Ac0-bw-JD8"/>
                                     <constraint firstItem="gby-hQ-cQs" firstAttribute="top" secondItem="9DT-Er-CNy" secondAttribute="bottom" constant="6" id="B4y-Te-fmW"/>
                                     <constraint firstItem="Tpu-od-3i4" firstAttribute="leading" secondItem="TOQ-SJ-Tv7" secondAttribute="leading" constant="12" id="ITZ-Fn-Lct"/>
@@ -455,7 +455,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QEH-vp-BAX">
-                                <rect key="frame" x="30" y="721" width="333" height="31"/>
+                                <rect key="frame" x="30" y="729" width="333" height="31"/>
                                 <color key="tintColor" name="AccentColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Return Home Page">

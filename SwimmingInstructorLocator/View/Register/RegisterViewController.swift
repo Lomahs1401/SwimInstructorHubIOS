@@ -7,6 +7,8 @@
 
 import UIKit
 import MBRadioCheckboxButton
+import SCLAlertView
+import Alamofire
 
 enum AccountType {
     case ROLE_STUDENT
@@ -113,13 +115,13 @@ class RegisterViewController: UIViewController {
         if isRegisterFormValid {
             let currentRole = getCurrentRoleString()
             let createAccountMsg = NSLocalizedString(currentRole, comment: "")
-            let alertController = UIAlertController(title: NSLocalizedString("Confirm", comment: ""), message: NSLocalizedString(createAccountMsg, comment: ""), preferredStyle: .alert)
+            let alertController = UIAlertController(title: NSLocalizedString("confirm", comment: ""), message: NSLocalizedString(createAccountMsg, comment: ""), preferredStyle: .alert)
             
-            let cancelAction = UIAlertAction(title: NSLocalizedString("No", comment: ""), style: .default) { _ in
+            let cancelAction = UIAlertAction(title: NSLocalizedString("no", comment: ""), style: .default) { _ in
                 alertController.dismiss(animated: true, completion: nil)
             }
             
-            let confirmAction = UIAlertAction(title: NSLocalizedString("Yes", comment: ""), style: .default) { _ in
+            let confirmAction = UIAlertAction(title: NSLocalizedString("yes", comment: ""), style: .default) { _ in
                 self.presenter.signUp(registerDTO: registerDTO)
             }
             
@@ -131,7 +133,7 @@ class RegisterViewController: UIViewController {
     }
     
     private func getCurrentRoleString() -> String {
-        return isRoleStudentChecked ? "CreateNewStudentAccount" : "CreateNewInstructorAccount"
+        return isRoleStudentChecked ? "create_new_student_account" : "create_new_instructor_account"
     }
 }
 
@@ -181,11 +183,33 @@ extension RegisterViewController: RegisterContractView {
         }
     }
     
-    func onSignUpSuccess() {
-        
+    func onSignUpSuccess(account: AccountApiResponse) {
+        let successAlert = SCLAlertView()
+        successAlert.showSuccess(
+            NSLocalizedString("success", comment: ""),
+            subTitle: NSLocalizedString("create_account_successed", comment: ""),
+            closeButtonTitle: "OK"
+        )
     }
     
-    func onSignUpError() {
+    func onSignUpError(error: AuthError) {
+        var errorMessage: String
         
+        switch error {
+        case .networkError:
+            errorMessage = NSLocalizedString("network_error", comment: "")
+        case .invalidResponse:
+            errorMessage = NSLocalizedString("invalid_response_error", comment: "")
+        case .emailAlreadyExists:
+            errorMessage = NSLocalizedString("email_already_exists_error", comment: "")
+        }
+        
+        // Create an error alert with error message
+        let errorAlert = SCLAlertView()
+        errorAlert.showError(
+            NSLocalizedString("error", comment: ""),
+            subTitle: errorMessage,
+            closeButtonTitle: "OK"
+        )
     }
 }

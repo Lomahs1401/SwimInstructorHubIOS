@@ -18,7 +18,7 @@ class AuthService: AuthServiceProto {
         authRepo.login(loginDTO, completion: completion)
     }
     
-    func register(_ registerDTO: RegisterDTO, completion: @escaping (Result<Account, Error>) -> Void) {
+    func register(_ registerDTO: RegisterDTO, completion: @escaping (Result<AccountApiResponse, AuthError>) -> Void) {
         authRepo.register(registerDTO, completion: completion)
     }
     
